@@ -1,0 +1,196 @@
+[1] 1
+[1] 148  15
+
+Call:
+phyloglm(formula = f, data = glmData, phy = modelTree, method = "logistic_MPLE", 
+    btol = 36, log.alpha.bound = 4)
+       AIC     logLik Pen.logLik 
+     81.94     -36.97     -34.83 
+
+Method: logistic_MPLE
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.01957002 
+
+Coefficients:
+                  Estimate  StdErr z.value p.value  
+(Intercept)        1.62101 0.79372  2.0423 0.04112 *
+PETWettestQuarter  0.41451 0.26861  1.5432 0.12278  
+OrganicCarbon      0.82590 0.73423  1.1248 0.26065  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.01957002
+
+[1] 2
+[1] 115  15
+
+Call:
+phyloglm(formula = f, data = glmData, phy = modelTree, method = "logistic_MPLE", 
+    btol = 36, log.alpha.bound = 4)
+       AIC     logLik Pen.logLik 
+     56.74     -25.37     -23.73 
+
+Method: logistic_MPLE
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.06016939 
+
+Coefficients:
+            Estimate   StdErr z.value   p.value    
+(Intercept) -2.21646  0.52617 -4.2124 2.526e-05 ***
+bio19       -0.33018  0.36984 -0.8928     0.372    
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.06016939
+
+[1] 3
+[1] 129  15
+
+Call:
+phyloglm(formula = f, data = glmData, phy = modelTree, method = "logistic_MPLE", 
+    btol = 36, log.alpha.bound = 4)
+       AIC     logLik Pen.logLik 
+     77.84     -35.92     -35.90 
+
+Method: logistic_MPLE
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.02513116 
+
+Coefficients:
+              Estimate   StdErr z.value p.value  
+(Intercept)   -2.21956  0.88028 -2.5214 0.01169 *
+OrganicCarbon -1.11319  1.26299 -0.8814 0.37811  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.02513116
+
+[1] 4
+[1] 123  15
+
+Call:
+phyloglm(formula = f, data = glmData, phy = modelTree, method = "logistic_MPLE", 
+    btol = 36, log.alpha.bound = 4)
+       AIC     logLik Pen.logLik 
+    134.32     -61.16     -55.92 
+
+Method: logistic_MPLE
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.1156429 
+
+Coefficients:
+            Estimate   StdErr z.value   p.value    
+(Intercept)  1.23056  0.29065  4.2338 2.297e-05 ***
+Aspect      -0.97549  0.65488 -1.4896   0.13634    
+bio14       -1.33656  0.52905 -2.5263   0.01153 *  
+bio15       -0.80948  0.39432 -2.0529   0.04009 *  
+bio19       -0.31713  0.30492 -1.0400   0.29832    
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.1156429
+
+[1] 5
+[1] 133  15
+
+Call:
+phyloglm(formula = f, data = glmData, phy = modelTree, method = "logistic_MPLE", 
+    btol = 36, log.alpha.bound = 4)
+       AIC     logLik Pen.logLik 
+    160.81     -76.40     -72.01 
+
+Method: logistic_MPLE
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.07779399 
+
+Coefficients:
+            Estimate   StdErr z.value p.value  
+(Intercept) -0.11112  0.26156 -0.4248 0.67097  
+bio18        0.49100  0.22450  2.1871 0.02874 *
+bio19        0.50104  0.22080  2.2692 0.02325 *
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.07779399
+
+[1] 6
+[1] 91 15
+
+Call:
+phyloglm(formula = f, data = glmData, phy = modelTree, method = "logistic_MPLE", 
+    btol = 36, log.alpha.bound = 4)
+       AIC     logLik Pen.logLik 
+     94.44     -39.22     -34.72 
+
+Method: logistic_MPLE
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.02094764 
+
+Coefficients:
+               Estimate   StdErr z.value  p.value    
+(Intercept)    0.097798 0.628076  0.1557 0.876262    
+BulkDensity    1.503674 1.200011  1.2530 0.210188    
+PETseasonality 0.683038 0.338753  2.0163 0.043765 *  
+OrganicCarbon  2.953929 1.457310  2.0270 0.042665 *  
+Slope          1.647457 0.456339  3.6102 0.000306 ***
+bio14          0.249417 0.544816  0.4578 0.647095    
+bio15          0.760623 0.468328  1.6241 0.104349    
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.02094764
+
+[1] 7
+[1] 106  15
+
+Call:
+phyloglm(formula = f, data = glmData, phy = modelTree, method = "logistic_MPLE", 
+    btol = 36, log.alpha.bound = 4)
+       AIC     logLik Pen.logLik 
+    104.35     -47.17     -43.05 
+
+Method: logistic_MPLE
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.01216445 
+
+Coefficients:
+                  Estimate   StdErr z.value   p.value    
+(Intercept)       -1.63829  0.89719 -1.8260 0.0678470 .  
+PETWettestQuarter  1.28138  0.44923  2.8524 0.0043396 ** 
+Slope              1.57555  0.47429  3.3219 0.0008941 ***
+bio19              0.49521  0.21978  2.2532 0.0242484 *  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.01216445
+
+[1] 8
+[1] 148  15
+
+Call:
+phyloglm(formula = f, data = glmData, phy = modelTree, method = "logistic_MPLE", 
+    btol = 36, log.alpha.bound = 4)
+       AIC     logLik Pen.logLik 
+    104.06     -49.03     -47.45 
+
+Method: logistic_MPLE
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.01418906 
+
+Coefficients:
+            Estimate  StdErr z.value p.value
+(Intercept)  1.64594 1.07282  1.5342  0.1250
+bio14        0.14782 0.19196  0.7701  0.4413
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.01418906
+
+[1] 9
+[1] "Finish"
