@@ -147,18 +147,30 @@ binData <- subset(Responser,select = c("Domestication", "X12.1_HabitatBreadth", 
 multiData <- subset(Responser, select = c("X1.1_ActivityCycle", "MatingSystem", "NaturalPredators", "NumMales", "X6.1_DietBreadth"))
 numData <- subset(Responser, select = -c(Domestication, X12.1_HabitatBreadth, X6.2_TrophicLevel, Sociality, SocialHierarchy, YearRoundBreeding, DevelopmentStrategy, HeadOrnaments, X1.1_ActivityCycle, MatingSystem, NaturalPredators, NumMales, X6.1_DietBreadth))
 
-# ??? insufficient data for glm？？？-- >90%
-# Do the model selection
+
+# Do the model selection   
 source("Model_Selection_Num.R")
-source("Model_Selection_Factor_Multi.R")
+# source("Model_Selection_Factor_Multi.R")
 source("Model_Selection_Factor_Binary.R")
+
+#The final models stored in the documents are organized orderly into three new documents:"Formula_binary.txt", "Formula_multi.txt", "Formula_num.txt"
+
 # Remove unneeded variables
 # rm(Responser)
 ```
 
-## Loading...↓↓↓
-
 # 5 Modelling analysis 
+The phylogenetic generalized linear modelling analysis optimizes the model. The function phyloglm/??? from the phylolm package is used for this.
+```{r model analysis}
+# Import documents that contain the formula for the model analysis
+binFormulas <- read.table("Formula_binary.txt", sep = "\n")
+multiFormulas <- read.table("Formula_multi.txt", sep = "\n")
+numFormulas <- read.table("Formula_num.txt", sep = "\n")
+
+source("Model_Analysis_Factor_Binary.R")
+# source("Model_Analysis_Factor_Multi.R")
+# source("Model_Analysis_Factor_Num.R")
+```
 
 
 # 6 Model evaluation 
