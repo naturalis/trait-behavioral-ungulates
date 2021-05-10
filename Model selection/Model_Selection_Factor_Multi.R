@@ -13,7 +13,7 @@ mSelection_multi <- function(x, c1, c2){
   # The result of 'apply' is type list. Change x to dataframe with type factor
   dim(x)<-c(148,1)
   x<- as.factor(x)
-  # ¹¹½¨×¨ÊôÓÚÕâ¸öglmµÄÊý¾Ý¼¯¡°glmData¡±
+  # æž„å»ºä¸“å±žäºŽè¿™ä¸ªglmçš„æ•°æ®é›†â€œglmDataâ€
   glmData <- cbind(x, c1, ungulatesTraits$CanonicalName)
   colnames(glmData)[colnames(glmData)=="ungulatesTraits$CanonicalName"]<-c("CanonicalName")
   # Only the rows without any missing values are selected
