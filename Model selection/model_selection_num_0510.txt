@@ -1,0 +1,2365 @@
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 3943.38940717302
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 3945.29312243733
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 3945.38132500058
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 3945.29773154815
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 3944.24843009961
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 3945.12617023206
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 3945.36769940259
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 3945.17137626823
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 3945.14994911885
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 3945.36876465852
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 3944.93938936976
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 3945.1469570407
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 3945.19704081783
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 3945.06290267992
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 3945.02172214113
+----------
+Step 1
+Current model: x ~ 1
+AIC(k=2): 3943.38940717302
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+  3943  -1970 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-487084 -463884 -419474 -299376 1796966 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 1623565680 
+
+Coefficients:
+            Estimate StdErr t.value  p.value   
+(Intercept)   488974 164601  2.9707 0.003476 **
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared:     0	Adjusted R-squared:     0 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1653.98741075313
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1655.79726201425
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1654.31517079163
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1655.91650236349
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1652.49828598976
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1655.91338267195
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1655.03820909554
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1650.57810691929
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1654.73853129971
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1654.10942407332
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1655.96525116769
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1655.33806962054
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1655.60000686889
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1655.36060993827
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1654.74752373951
+----------
+Step 1
+Current model: x ~ 1 + OrganicCarbon
+AIC(k=2): 1650.57810691929
+	Proposed: x ~ 1 + Aspect + OrganicCarbon
+	AIC(k=2): 1652.43783738247
+	Proposed: x ~ 1 + BulkDensity + OrganicCarbon
+	AIC(k=2): 1652.428257442
+	Proposed: x ~ 1 + ClayPercentage + OrganicCarbon
+	AIC(k=2): 1652.1794301009
+	Proposed: x ~ 1 + PETDriestQuarter + OrganicCarbon
+	AIC(k=2): 1651.04546784153
+	Proposed: x ~ 1 + PETseasonality + OrganicCarbon
+	AIC(k=2): 1652.56660746234
+	Proposed: x ~ 1 + PETWettestQuarter + OrganicCarbon
+	AIC(k=2): 1652.57379490251
+	Proposed: x ~ 1 + OrganicCarbon + PhCaCL
+	AIC(k=2): 1652.39854626558
+	Proposed: x ~ 1 + OrganicCarbon + Slope
+	AIC(k=2): 1651.84239847798
+	Proposed: x ~ 1 + OrganicCarbon + bio2
+	AIC(k=2): 1651.48286680789
+	Proposed: x ~ 1 + OrganicCarbon + bio14
+	AIC(k=2): 1652.57779834386
+	Proposed: x ~ 1 + OrganicCarbon + bio15
+	AIC(k=2): 1652.3614849456
+	Proposed: x ~ 1 + OrganicCarbon + bio18
+	AIC(k=2): 1652.24309203414
+	Proposed: x ~ 1 + OrganicCarbon + bio19
+	AIC(k=2): 1650.90138006312
+----------
+Step 2
+Current model: x ~ 1 + OrganicCarbon
+AIC(k=2): 1650.57810691929
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+1650.6 -822.3 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-1329.3  -794.8  -441.3   157.3  2384.7 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 11460.98 
+
+Coefficients:
+              Estimate  StdErr t.value   p.value    
+(Intercept)    1889.65  453.56  4.1663 6.295e-05 ***
+OrganicCarbon   267.83  114.79  2.3332    0.0215 *  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.04842	Adjusted R-squared: 0.03952 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1110.44404121788
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1111.66275748703
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1110.74025220618
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1110.61709967898
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1111.12361222626
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1112.09846808271
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1111.60812690772
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1112.16063292721
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1112.15322474121
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1112.40490474105
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1111.33476546342
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1111.6809354009
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1112.26249375844
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1111.05261187754
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1111.66328463924
+----------
+Step 1
+Current model: x ~ 1
+AIC(k=2): 1110.44404121788
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+1110.4 -553.2 
+
+Raw residuals:
+   Min     1Q Median     3Q    Max 
+-979.4 -586.2 -363.4 -135.3 1388.5 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 4257.886 
+
+Coefficients:
+            Estimate  StdErr t.value   p.value    
+(Intercept)  1230.32  274.34  4.4847 2.547e-05 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared:     0	Adjusted R-squared:     0 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1380.41655059849
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1382.27859898293
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1376.8236025389
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1378.70546756384
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1381.00958621115
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1375.97417085419
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1382.40833194614
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1377.81454428071
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1381.50448928901
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1377.58494994447
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1381.59535679552
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1381.68459959141
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1380.69653341101
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1377.72596698101
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1381.25416716919
+----------
+Step 1
+Current model: x ~ 1 + PETseasonality
+AIC(k=2): 1375.97417085419
+	Proposed: x ~ 1 + Aspect + PETseasonality
+	AIC(k=2): 1372.65657627291
+	Proposed: x ~ 1 + BulkDensity + PETseasonality
+	AIC(k=2): 1377.1855592419
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality
+	AIC(k=2): 1373.9994027439
+	Proposed: x ~ 1 + PETDriestQuarter + PETseasonality
+	AIC(k=2): 1376.86253797865
+	Proposed: x ~ 1 + PETseasonality + PETWettestQuarter
+	AIC(k=2): 1372.81543014018
+	Proposed: x ~ 1 + PETseasonality + OrganicCarbon
+	AIC(k=2): 1377.9450568957
+	Proposed: x ~ 1 + PETseasonality + PhCaCL
+	AIC(k=2): 1377.97045415043
+	Proposed: x ~ 1 + PETseasonality + Slope
+	AIC(k=2): 1377.8575090235
+	Proposed: x ~ 1 + PETseasonality + bio2
+	AIC(k=2): 1371.64911370021
+	Proposed: x ~ 1 + PETseasonality + bio14
+	AIC(k=2): 1377.77892096566
+	Proposed: x ~ 1 + PETseasonality + bio15
+	AIC(k=2): 1376.5532315139
+	Proposed: x ~ 1 + PETseasonality + bio18
+	AIC(k=2): 1375.28955978445
+	Proposed: x ~ 1 + PETseasonality + bio19
+	AIC(k=2): 1374.01167862411
+----------
+Step 2
+Current model: x ~ 1 + PETseasonality + bio2
+AIC(k=2): 1371.64911370021
+	Proposed: x ~ 1 + Aspect + PETseasonality + bio2
+	AIC(k=2): 1371.36455456318
+	Proposed: x ~ 1 + BulkDensity + PETseasonality + bio2
+	AIC(k=2): 1373.06314739699
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + bio2
+	AIC(k=2): 1370.89644635033
+	Proposed: x ~ 1 + PETDriestQuarter + PETseasonality + bio2
+	AIC(k=2): 1372.32445013654
+	Proposed: x ~ 1 + PETseasonality + PETWettestQuarter + bio2
+	AIC(k=2): 1372.28074976515
+	Proposed: x ~ 1 + PETseasonality + OrganicCarbon + bio2
+	AIC(k=2): 1373.44384499983
+	Proposed: x ~ 1 + PETseasonality + PhCaCL + bio2
+	AIC(k=2): 1373.30811449599
+	Proposed: x ~ 1 + PETseasonality + Slope + bio2
+	AIC(k=2): 1373.64674164226
+	Proposed: x ~ 1 + PETseasonality + bio2 + bio14
+	AIC(k=2): 1373.43785024746
+	Proposed: x ~ 1 + PETseasonality + bio2 + bio15
+	AIC(k=2): 1373.12055831113
+	Proposed: x ~ 1 + PETseasonality + bio2 + bio18
+	AIC(k=2): 1372.48334106277
+	Proposed: x ~ 1 + PETseasonality + bio2 + bio19
+	AIC(k=2): 1372.18763886102
+----------
+Step 3
+Current model: x ~ 1 + ClayPercentage + PETseasonality + bio2
+AIC(k=2): 1370.89644635033
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PETseasonality + bio2
+	AIC(k=2): 1371.15855780139
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality + bio2
+	AIC(k=2): 1372.84514376334
+	Proposed: x ~ 1 + ClayPercentage + PETDriestQuarter + PETseasonality + bio2
+	AIC(k=2): 1371.96078537482
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + bio2
+	AIC(k=2): 1370.25632230482
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + OrganicCarbon + bio2
+	AIC(k=2): 1372.69008463607
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PhCaCL + bio2
+	AIC(k=2): 1372.14796171956
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + Slope + bio2
+	AIC(k=2): 1372.4759712762
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + bio2 + bio14
+	AIC(k=2): 1372.84669133085
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + bio2 + bio15
+	AIC(k=2): 1372.78456672946
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + bio2 + bio18
+	AIC(k=2): 1370.98789180526
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + bio2 + bio19
+	AIC(k=2): 1372.53083462939
+----------
+Step 4
+Current model: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + bio2
+AIC(k=2): 1370.25632230482
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PETseasonality + PETWettestQuarter + bio2
+	AIC(k=2): 1370.95637251517
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality + PETWettestQuarter + bio2
+	AIC(k=2): 1371.39053854644
+	Proposed: x ~ 1 + ClayPercentage + PETDriestQuarter + PETseasonality + PETWettestQuarter + bio2
+	AIC(k=2): 1371.69226506564
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + OrganicCarbon + bio2
+	AIC(k=2): 1371.97132657822
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + PhCaCL + bio2
+	AIC(k=2): 1372.24053691976
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + Slope + bio2
+	AIC(k=2): 1371.97795221307
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + bio2 + bio14
+	AIC(k=2): 1372.1233449086
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + bio2 + bio15
+	AIC(k=2): 1372.24620593723
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + bio2 + bio18
+	AIC(k=2): 1371.08984061317
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + bio2 + bio19
+	AIC(k=2): 1372.04867940514
+----------
+Step 5
+Current model: x ~ 1 + ClayPercentage + PETseasonality + PETWettestQuarter + bio2
+AIC(k=2): 1370.25632230482
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+1370.3 -679.1 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-188.66 -119.92  -77.19  -36.47  231.18 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 70.96205 
+
+Coefficients:
+                  Estimate   StdErr t.value   p.value    
+(Intercept)       293.5844  35.0303  8.3809 6.845e-14 ***
+ClayPercentage     -4.6262   2.3321 -1.9837 0.0493641 *  
+PETseasonality     -8.6005   2.2852 -3.7635 0.0002511 ***
+PETWettestQuarter   5.4684   3.4121  1.6026 0.1114056    
+bio2                3.8528   3.7159  1.0368 0.3017040    
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.1241	Adjusted R-squared: 0.09761 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1012.85108410333
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1012.70908436832
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1013.47167000211
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1011.99336752399
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1014.19231182691
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1014.44142769243
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1014.11097012337
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1014.32498832133
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1014.05273512552
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1013.42514759815
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1013.80354697556
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1014.30476191486
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1014.43649862577
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1014.8351673092
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1014.84311269279
+----------
+Step 1
+Current model: x ~ 1 + ClayPercentage
+AIC(k=2): 1011.99336752399
+	Proposed: x ~ 1 + Aspect + ClayPercentage
+	AIC(k=2): 1013.42858396985
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage
+	AIC(k=2): 1011.40231315774
+	Proposed: x ~ 1 + ClayPercentage + PETDriestQuarter
+	AIC(k=2): 1013.83291088152
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality
+	AIC(k=2): 1012.92912769216
+	Proposed: x ~ 1 + ClayPercentage + PETWettestQuarter
+	AIC(k=2): 1013.5055224889
+	Proposed: x ~ 1 + ClayPercentage + OrganicCarbon
+	AIC(k=2): 1012.94555574918
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL
+	AIC(k=2): 1012.25890746689
+	Proposed: x ~ 1 + ClayPercentage + Slope
+	AIC(k=2): 1012.87805302895
+	Proposed: x ~ 1 + ClayPercentage + bio2
+	AIC(k=2): 1013.14017833374
+	Proposed: x ~ 1 + ClayPercentage + bio14
+	AIC(k=2): 1013.53882399584
+	Proposed: x ~ 1 + ClayPercentage + bio15
+	AIC(k=2): 1013.97513315254
+	Proposed: x ~ 1 + ClayPercentage + bio18
+	AIC(k=2): 1013.99321977429
+	Proposed: x ~ 1 + ClayPercentage + bio19
+	AIC(k=2): 1013.38492879148
+----------
+Step 2
+Current model: x ~ 1 + BulkDensity + ClayPercentage
+AIC(k=2): 1011.40231315774
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage
+	AIC(k=2): 1013.02868183209
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter
+	AIC(k=2): 1012.08248599065
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality
+	AIC(k=2): 1011.47484574756
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETWettestQuarter
+	AIC(k=2): 1011.8114813655
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + OrganicCarbon
+	AIC(k=2): 1013.37083788672
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL
+	AIC(k=2): 1004.40915018519
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + Slope
+	AIC(k=2): 1011.443101867
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio2
+	AIC(k=2): 1006.28052260543
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio14
+	AIC(k=2): 1009.09093761366
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio15
+	AIC(k=2): 1012.4428573232
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio18
+	AIC(k=2): 1013.39835769365
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio19
+	AIC(k=2): 1011.35294960061
+----------
+Step 3
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL
+AIC(k=2): 1004.40915018519
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL
+	AIC(k=2): 1004.49906718733
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL
+	AIC(k=2): 1006.07139362111
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality + PhCaCL
+	AIC(k=2): 1006.15904212289
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETWettestQuarter + PhCaCL
+	AIC(k=2): 1005.09319998612
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + OrganicCarbon + PhCaCL
+	AIC(k=2): 1006.26901844303
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + Slope
+	AIC(k=2): 1004.43614317569
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2
+	AIC(k=2): 1002.76095151496
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio14
+	AIC(k=2): 1005.63590457641
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio15
+	AIC(k=2): 1006.22469558404
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio18
+	AIC(k=2): 1005.71126095837
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio19
+	AIC(k=2): 1006.40585128183
+----------
+Step 4
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2
+AIC(k=2): 1002.76095151496
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio2
+	AIC(k=2): 1002.30378536552
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio2
+	AIC(k=2): 1004.73388224959
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality + PhCaCL + bio2
+	AIC(k=2): 1004.67131241546
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETWettestQuarter + PhCaCL + bio2
+	AIC(k=2): 1004.408367209
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + OrganicCarbon + PhCaCL + bio2
+	AIC(k=2): 1004.25287344979
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2
+	AIC(k=2): 1002.81059172289
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14
+	AIC(k=2): 1004.27623606146
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio15
+	AIC(k=2): 1004.75353927081
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio18
+	AIC(k=2): 1004.11840133808
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio19
+	AIC(k=2): 1004.76092769941
+----------
+Step 5
+Current model: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio2
+AIC(k=2): 1002.30378536552
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio2
+	AIC(k=2): 1004.19485370345
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + PhCaCL + bio2
+	AIC(k=2): 1004.21453420443
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETWettestQuarter + PhCaCL + bio2
+	AIC(k=2): 1004.13145338702
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + OrganicCarbon + PhCaCL + bio2
+	AIC(k=2): 1003.14913613424
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2
+	AIC(k=2): 1002.27764657145
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14
+	AIC(k=2): 1004.12228477963
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio15
+	AIC(k=2): 1003.99873437014
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio18
+	AIC(k=2): 1004.19386512273
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio19
+	AIC(k=2): 1004.27298491924
+----------
+Step 6
+Current model: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2
+AIC(k=2): 1002.27764657145
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + Slope + bio2
+	AIC(k=2): 1003.96923674254
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + PhCaCL + Slope + bio2
+	AIC(k=2): 1004.15631185216
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETWettestQuarter + PhCaCL + Slope + bio2
+	AIC(k=2): 1003.50347439947
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + OrganicCarbon + PhCaCL + Slope + bio2
+	AIC(k=2): 1003.59546122174
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2 + bio14
+	AIC(k=2): 1004.27450214127
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2 + bio15
+	AIC(k=2): 1003.62423688026
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2 + bio18
+	AIC(k=2): 1004.23483138498
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2 + bio19
+	AIC(k=2): 1004.12916861079
+----------
+Step 7
+Current model: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2
+AIC(k=2): 1002.27764657145
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+1002.3 -493.1 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-512.88 -211.48 -101.77    0.79 1665.04 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 4722.989 
+
+Coefficients:
+               Estimate   StdErr t.value   p.value    
+(Intercept)     122.945  305.349  0.4026 0.6886230    
+Aspect         -178.040  117.014 -1.5215 0.1332944    
+BulkDensity     454.078  113.212  4.0109 0.0001676 ***
+ClayPercentage -162.145   74.165 -2.1863 0.0326413 *  
+PhCaCL         -240.562   93.783 -2.5651 0.0127905 *  
+Slope            67.347   49.583  1.3583 0.1793784    
+bio2           -112.396   57.141 -1.9670 0.0537377 .  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.2825	Adjusted R-squared: 0.2119 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 971.92089101031
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 973.683368838251
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 969.109161165115
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 968.603759173504
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 972.461636419976
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 973.618206118947
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 973.910654223598
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 968.854465985141
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 973.893920762523
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 973.457518380055
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 971.303878797184
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 973.853356139132
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 973.870405405539
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 973.904838965314
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 973.160939376611
+----------
+Step 1
+Current model: x ~ 1 + ClayPercentage
+AIC(k=2): 968.603759173504
+	Proposed: x ~ 1 + Aspect + ClayPercentage
+	AIC(k=2): 968.38714739361
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage
+	AIC(k=2): 965.247860098712
+	Proposed: x ~ 1 + ClayPercentage + PETDriestQuarter
+	AIC(k=2): 970.347735582488
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality
+	AIC(k=2): 970.598151953857
+	Proposed: x ~ 1 + ClayPercentage + PETWettestQuarter
+	AIC(k=2): 970.42012985041
+	Proposed: x ~ 1 + ClayPercentage + OrganicCarbon
+	AIC(k=2): 966.759883350021
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL
+	AIC(k=2): 969.733582070921
+	Proposed: x ~ 1 + ClayPercentage + Slope
+	AIC(k=2): 970.446163701589
+	Proposed: x ~ 1 + ClayPercentage + bio2
+	AIC(k=2): 968.113397446072
+	Proposed: x ~ 1 + ClayPercentage + bio14
+	AIC(k=2): 970.308303626471
+	Proposed: x ~ 1 + ClayPercentage + bio15
+	AIC(k=2): 970.603752648975
+	Proposed: x ~ 1 + ClayPercentage + bio18
+	AIC(k=2): 970.231308844513
+	Proposed: x ~ 1 + ClayPercentage + bio19
+	AIC(k=2): 970.581720188109
+----------
+Step 2
+Current model: x ~ 1 + BulkDensity + ClayPercentage
+AIC(k=2): 965.247860098712
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage
+	AIC(k=2): 966.089967702734
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter
+	AIC(k=2): 966.599448772876
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality
+	AIC(k=2): 967.15639113785
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETWettestQuarter
+	AIC(k=2): 967.168103796151
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + OrganicCarbon
+	AIC(k=2): 966.600470155822
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL
+	AIC(k=2): 967.188992481432
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + Slope
+	AIC(k=2): 967.146783872663
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio2
+	AIC(k=2): 967.081000087572
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio14
+	AIC(k=2): 966.856541238882
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio15
+	AIC(k=2): 966.375181625983
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio18
+	AIC(k=2): 967.138279764225
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio19
+	AIC(k=2): 967.24533532082
+----------
+Step 3
+Current model: x ~ 1 + BulkDensity + ClayPercentage
+AIC(k=2): 965.247860098712
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+ 965.2 -478.6 
+
+Raw residuals:
+   Min     1Q Median     3Q    Max 
+-393.0 -242.4 -170.9 -123.8  544.2 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 457.5999 
+
+Coefficients:
+               Estimate  StdErr t.value   p.value    
+(Intercept)     571.628  92.043  6.2105 2.585e-08 ***
+BulkDensity     -68.597  29.709 -2.3089   0.02367 *  
+ClayPercentage  -38.592  15.951 -2.4193   0.01794 *  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.1264	Adjusted R-squared: 0.1034 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 143.566675897518
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 136.434638267742
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 131.020703917008
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 135.86675784187
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 142.633527854352
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 145.331421825086
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 144.975457208912
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 138.747700128118
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 145.287441853809
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 136.975382121068
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 144.067513316625
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 105.085521689924
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 139.416496011187
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 129.663141299435
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 145.564556363326
+----------
+Step 1
+Current model: x ~ 1 + bio14
+AIC(k=2): 105.085521689924
+	Proposed: x ~ 1 + Aspect + bio14
+	AIC(k=2): 105.745345122249
+	Proposed: x ~ 1 + BulkDensity + bio14
+	AIC(k=2): 107.085518937506
+	Proposed: x ~ 1 + ClayPercentage + bio14
+	AIC(k=2): 99.9005079668577
+	Proposed: x ~ 1 + PETDriestQuarter + bio14
+	AIC(k=2): 107.085450946172
+	Proposed: x ~ 1 + PETseasonality + bio14
+	AIC(k=2): 106.694486393678
+	Proposed: x ~ 1 + PETWettestQuarter + bio14
+	AIC(k=2): 106.948921448357
+	Proposed: x ~ 1 + OrganicCarbon + bio14
+	AIC(k=2): 106.99488090355
+	Proposed: x ~ 1 + PhCaCL + bio14
+	AIC(k=2): 102.525032836799
+	Proposed: x ~ 1 + Slope + bio14
+	AIC(k=2): 106.802559982664
+	Proposed: x ~ 1 + bio2 + bio14
+	AIC(k=2): 102.942471814356
+	Proposed: x ~ 1 + bio14 + bio15
+	AIC(k=2): 101.771618048959
+	Proposed: x ~ 1 + bio14 + bio18
+	AIC(k=2): 107.073646236914
+	Proposed: x ~ 1 + bio14 + bio19
+	AIC(k=2): 103.767809678852
+----------
+Step 2
+Current model: x ~ 1 + ClayPercentage + bio14
+AIC(k=2): 99.9005079668577
+	Proposed: x ~ 1 + Aspect + ClayPercentage + bio14
+	AIC(k=2): 101.109356000423
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio14
+	AIC(k=2): 101.57569836278
+	Proposed: x ~ 1 + ClayPercentage + PETDriestQuarter + bio14
+	AIC(k=2): 101.852524623234
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + bio14
+	AIC(k=2): 101.608458574315
+	Proposed: x ~ 1 + ClayPercentage + PETWettestQuarter + bio14
+	AIC(k=2): 101.600191182456
+	Proposed: x ~ 1 + ClayPercentage + OrganicCarbon + bio14
+	AIC(k=2): 101.764897346138
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL + bio14
+	AIC(k=2): 99.1983318903589
+	Proposed: x ~ 1 + ClayPercentage + Slope + bio14
+	AIC(k=2): 101.900480757611
+	Proposed: x ~ 1 + ClayPercentage + bio2 + bio14
+	AIC(k=2): 99.0635611421625
+	Proposed: x ~ 1 + ClayPercentage + bio14 + bio15
+	AIC(k=2): 100.51814079545
+	Proposed: x ~ 1 + ClayPercentage + bio14 + bio18
+	AIC(k=2): 101.445048899197
+	Proposed: x ~ 1 + ClayPercentage + bio14 + bio19
+	AIC(k=2): 101.454785104261
+----------
+Step 3
+Current model: x ~ 1 + ClayPercentage + bio2 + bio14
+AIC(k=2): 99.0635611421625
+	Proposed: x ~ 1 + Aspect + ClayPercentage + bio2 + bio14
+	AIC(k=2): 101.036658583308
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio2 + bio14
+	AIC(k=2): 101.063142280844
+	Proposed: x ~ 1 + ClayPercentage + PETDriestQuarter + bio2 + bio14
+	AIC(k=2): 101.04207221277
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + bio2 + bio14
+	AIC(k=2): 100.972884948635
+	Proposed: x ~ 1 + ClayPercentage + PETWettestQuarter + bio2 + bio14
+	AIC(k=2): 100.460807620971
+	Proposed: x ~ 1 + ClayPercentage + OrganicCarbon + bio2 + bio14
+	AIC(k=2): 100.732868272202
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL + bio2 + bio14
+	AIC(k=2): 98.1879231572101
+	Proposed: x ~ 1 + ClayPercentage + Slope + bio2 + bio14
+	AIC(k=2): 100.65316087713
+	Proposed: x ~ 1 + ClayPercentage + bio2 + bio14 + bio15
+	AIC(k=2): 99.8322251643801
+	Proposed: x ~ 1 + ClayPercentage + bio2 + bio14 + bio18
+	AIC(k=2): 100.99779143045
+	Proposed: x ~ 1 + ClayPercentage + bio2 + bio14 + bio19
+	AIC(k=2): 101.062200074944
+----------
+Step 4
+Current model: x ~ 1 + ClayPercentage + PhCaCL + bio2 + bio14
+AIC(k=2): 98.1879231572101
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PhCaCL + bio2 + bio14
+	AIC(k=2): 99.8960371784599
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14
+	AIC(k=2): 97.7059901660718
+	Proposed: x ~ 1 + ClayPercentage + PETDriestQuarter + PhCaCL + bio2 + bio14
+	AIC(k=2): 100.08861479668
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + PhCaCL + bio2 + bio14
+	AIC(k=2): 99.861109084905
+	Proposed: x ~ 1 + ClayPercentage + PETWettestQuarter + PhCaCL + bio2 + bio14
+	AIC(k=2): 100.046943173491
+	Proposed: x ~ 1 + ClayPercentage + OrganicCarbon + PhCaCL + bio2 + bio14
+	AIC(k=2): 99.5019582317919
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL + Slope + bio2 + bio14
+	AIC(k=2): 99.6887306387855
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 98.0590133543527
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL + bio2 + bio14 + bio18
+	AIC(k=2): 100.181457144008
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL + bio2 + bio14 + bio19
+	AIC(k=2): 99.9241289476065
+----------
+Step 5
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14
+AIC(k=2): 97.7059901660718
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14
+	AIC(k=2): 99.6679514006591
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio2 + bio14
+	AIC(k=2): 99.6941290493322
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality + PhCaCL + bio2 + bio14
+	AIC(k=2): 99.402800509742
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETWettestQuarter + PhCaCL + bio2 + bio14
+	AIC(k=2): 99.6731628282521
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + OrganicCarbon + PhCaCL + bio2 + bio14
+	AIC(k=2): 98.1320905122417
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2 + bio14
+	AIC(k=2): 98.9883881412453
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 96.7556451164425
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio18
+	AIC(k=2): 99.0493593705385
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio19
+	AIC(k=2): 99.5377543786186
+----------
+Step 6
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio15
+AIC(k=2): 96.7556451164425
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 98.4785027028686
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 98.2462053893789
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 98.5594194963617
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETWettestQuarter + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 98.7035095985377
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + OrganicCarbon + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 97.885782885231
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2 + bio14 + bio15
+	AIC(k=2): 98.6509430853521
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio15 + bio18
+	AIC(k=2): 98.587837115525
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio15 + bio19
+	AIC(k=2): 98.6692262122408
+----------
+Step 7
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio15
+AIC(k=2): 96.7556451164425
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+ 96.76 -40.38 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-1.1077 -0.3919 -0.3283 -0.1536  4.4465 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 0.006310852 
+
+Coefficients:
+                Estimate    StdErr t.value   p.value    
+(Intercept)     1.341049  0.333625  4.0196 9.817e-05 ***
+BulkDensity     0.063665  0.035743  1.7812   0.07721 .  
+ClayPercentage -0.030463  0.025659 -1.1872   0.23730    
+PhCaCL          0.145367  0.055383  2.6248   0.00971 ** 
+bio2            0.020031  0.029259  0.6846   0.49482    
+bio14           0.256118  0.047403  5.4030 3.022e-07 ***
+bio15           0.057338  0.034084  1.6822   0.09492 .  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.349	Adjusted R-squared: 0.319 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1452.16912107947
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1450.255321448
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1443.12737776828
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1454.10669185911
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1451.83117334544
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1448.65689689628
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1453.8277764856
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1451.59210785125
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1454.03424315378
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1448.48442316844
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1453.68010401348
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1442.9708764816
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1440.12136538812
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1450.19003103484
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1450.07073788541
+----------
+Step 1
+Current model: x ~ 1 + bio15
+AIC(k=2): 1440.12136538812
+	Proposed: x ~ 1 + Aspect + bio15
+	AIC(k=2): 1441.23663403492
+	Proposed: x ~ 1 + BulkDensity + bio15
+	AIC(k=2): 1441.16218146967
+	Proposed: x ~ 1 + ClayPercentage + bio15
+	AIC(k=2): 1439.01618226291
+	Proposed: x ~ 1 + PETDriestQuarter + bio15
+	AIC(k=2): 1442.04638218904
+	Proposed: x ~ 1 + PETseasonality + bio15
+	AIC(k=2): 1439.00734210308
+	Proposed: x ~ 1 + PETWettestQuarter + bio15
+	AIC(k=2): 1442.09528953517
+	Proposed: x ~ 1 + OrganicCarbon + bio15
+	AIC(k=2): 1442.01603875018
+	Proposed: x ~ 1 + PhCaCL + bio15
+	AIC(k=2): 1441.97442045011
+	Proposed: x ~ 1 + Slope + bio15
+	AIC(k=2): 1440.91246540706
+	Proposed: x ~ 1 + bio2 + bio15
+	AIC(k=2): 1441.1545164897
+	Proposed: x ~ 1 + bio14 + bio15
+	AIC(k=2): 1441.13320387235
+	Proposed: x ~ 1 + bio15 + bio18
+	AIC(k=2): 1442.10342308451
+	Proposed: x ~ 1 + bio15 + bio19
+	AIC(k=2): 1436.71534898707
+----------
+Step 2
+Current model: x ~ 1 + bio15 + bio19
+AIC(k=2): 1436.71534898707
+	Proposed: x ~ 1 + Aspect + bio15 + bio19
+	AIC(k=2): 1438.21943594801
+	Proposed: x ~ 1 + BulkDensity + bio15 + bio19
+	AIC(k=2): 1438.42345554377
+	Proposed: x ~ 1 + ClayPercentage + bio15 + bio19
+	AIC(k=2): 1438.13282831492
+	Proposed: x ~ 1 + PETDriestQuarter + bio15 + bio19
+	AIC(k=2): 1438.15430884202
+	Proposed: x ~ 1 + PETseasonality + bio15 + bio19
+	AIC(k=2): 1437.74507666312
+	Proposed: x ~ 1 + PETWettestQuarter + bio15 + bio19
+	AIC(k=2): 1437.42878453129
+	Proposed: x ~ 1 + OrganicCarbon + bio15 + bio19
+	AIC(k=2): 1438.382283856
+	Proposed: x ~ 1 + PhCaCL + bio15 + bio19
+	AIC(k=2): 1438.51785002253
+	Proposed: x ~ 1 + Slope + bio15 + bio19
+	AIC(k=2): 1438.03342358122
+	Proposed: x ~ 1 + bio2 + bio15 + bio19
+	AIC(k=2): 1438.71522139992
+	Proposed: x ~ 1 + bio14 + bio15 + bio19
+	AIC(k=2): 1437.06385105923
+	Proposed: x ~ 1 + bio15 + bio18 + bio19
+	AIC(k=2): 1438.71477586313
+----------
+Step 3
+Current model: x ~ 1 + bio15 + bio19
+AIC(k=2): 1436.71534898707
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+1436.7 -714.4 
+
+Raw residuals:
+   Min     1Q Median     3Q    Max 
+-294.1 -203.1 -154.5 -115.4  361.1 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 254.2062 
+
+Coefficients:
+            Estimate   StdErr t.value   p.value    
+(Intercept) 397.7589  66.0603  6.0211 1.819e-08 ***
+bio15       -17.3120   4.3366 -3.9921 0.0001114 ***
+bio19       -12.1675   5.2398 -2.3221 0.0218568 *  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.142	Adjusted R-squared: 0.1282 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1043.42320057277
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1045.18549972453
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1044.98163886425
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1041.42277181573
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1044.71657559143
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1044.05955137275
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1045.41094828269
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1044.55168885841
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1043.88831697066
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1044.46658370357
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1045.42306977597
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1045.39703075285
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1039.64792966648
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1042.76403774393
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1045.18281825562
+----------
+Step 1
+Current model: x ~ 1 + bio15
+AIC(k=2): 1039.64792966648
+	Proposed: x ~ 1 + Aspect + bio15
+	AIC(k=2): 1041.62533746922
+	Proposed: x ~ 1 + BulkDensity + bio15
+	AIC(k=2): 1039.26298405002
+	Proposed: x ~ 1 + ClayPercentage + bio15
+	AIC(k=2): 1039.92304836918
+	Proposed: x ~ 1 + PETDriestQuarter + bio15
+	AIC(k=2): 1041.64518000038
+	Proposed: x ~ 1 + PETseasonality + bio15
+	AIC(k=2): 1041.15951949943
+	Proposed: x ~ 1 + PETWettestQuarter + bio15
+	AIC(k=2): 1041.27868276046
+	Proposed: x ~ 1 + OrganicCarbon + bio15
+	AIC(k=2): 1037.83424131457
+	Proposed: x ~ 1 + PhCaCL + bio15
+	AIC(k=2): 1037.996065227
+	Proposed: x ~ 1 + Slope + bio15
+	AIC(k=2): 1041.62848634481
+	Proposed: x ~ 1 + bio2 + bio15
+	AIC(k=2): 1041.56830988706
+	Proposed: x ~ 1 + bio14 + bio15
+	AIC(k=2): 1035.93762808598
+	Proposed: x ~ 1 + bio15 + bio18
+	AIC(k=2): 1041.16834013952
+	Proposed: x ~ 1 + bio15 + bio19
+	AIC(k=2): 1041.2818586907
+----------
+Step 2
+Current model: x ~ 1 + bio14 + bio15
+AIC(k=2): 1035.93762808598
+	Proposed: x ~ 1 + Aspect + bio14 + bio15
+	AIC(k=2): 1035.55754399763
+	Proposed: x ~ 1 + BulkDensity + bio14 + bio15
+	AIC(k=2): 1037.80147505028
+	Proposed: x ~ 1 + ClayPercentage + bio14 + bio15
+	AIC(k=2): 1037.72952564995
+	Proposed: x ~ 1 + PETDriestQuarter + bio14 + bio15
+	AIC(k=2): 1037.92754467107
+	Proposed: x ~ 1 + PETseasonality + bio14 + bio15
+	AIC(k=2): 1035.93806120434
+	Proposed: x ~ 1 + PETWettestQuarter + bio14 + bio15
+	AIC(k=2): 1034.4105555248
+	Proposed: x ~ 1 + OrganicCarbon + bio14 + bio15
+	AIC(k=2): 1032.32220021453
+	Proposed: x ~ 1 + PhCaCL + bio14 + bio15
+	AIC(k=2): 1037.46788692573
+	Proposed: x ~ 1 + Slope + bio14 + bio15
+	AIC(k=2): 1037.91275246409
+	Proposed: x ~ 1 + bio2 + bio14 + bio15
+	AIC(k=2): 1036.80758913074
+	Proposed: x ~ 1 + bio14 + bio15 + bio18
+	AIC(k=2): 1032.00982798468
+	Proposed: x ~ 1 + bio14 + bio15 + bio19
+	AIC(k=2): 1037.6878173812
+----------
+Step 3
+Current model: x ~ 1 + bio14 + bio15 + bio18
+AIC(k=2): 1032.00982798468
+	Proposed: x ~ 1 + Aspect + bio14 + bio15 + bio18
+	AIC(k=2): 1032.47958671777
+	Proposed: x ~ 1 + BulkDensity + bio14 + bio15 + bio18
+	AIC(k=2): 1033.22795399444
+	Proposed: x ~ 1 + ClayPercentage + bio14 + bio15 + bio18
+	AIC(k=2): 1033.52438702668
+	Proposed: x ~ 1 + PETDriestQuarter + bio14 + bio15 + bio18
+	AIC(k=2): 1033.60379005489
+	Proposed: x ~ 1 + PETseasonality + bio14 + bio15 + bio18
+	AIC(k=2): 1030.24779943679
+	Proposed: x ~ 1 + PETWettestQuarter + bio14 + bio15 + bio18
+	AIC(k=2): 1033.32473289584
+	Proposed: x ~ 1 + OrganicCarbon + bio14 + bio15 + bio18
+	AIC(k=2): 1031.02716588996
+	Proposed: x ~ 1 + PhCaCL + bio14 + bio15 + bio18
+	AIC(k=2): 1033.82864252591
+	Proposed: x ~ 1 + Slope + bio14 + bio15 + bio18
+	AIC(k=2): 1033.88177077785
+	Proposed: x ~ 1 + bio2 + bio14 + bio15 + bio18
+	AIC(k=2): 1033.75722791673
+	Proposed: x ~ 1 + bio14 + bio15 + bio18 + bio19
+	AIC(k=2): 1033.99065791701
+----------
+Step 4
+Current model: x ~ 1 + PETseasonality + bio14 + bio15 + bio18
+AIC(k=2): 1030.24779943679
+	Proposed: x ~ 1 + Aspect + PETseasonality + bio14 + bio15 + bio18
+	AIC(k=2): 1032.16312601484
+	Proposed: x ~ 1 + BulkDensity + PETseasonality + bio14 + bio15 + bio18
+	AIC(k=2): 1031.96153256943
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality + bio14 + bio15 + bio18
+	AIC(k=2): 1032.00987449853
+	Proposed: x ~ 1 + PETDriestQuarter + PETseasonality + bio14 + bio15 + bio18
+	AIC(k=2): 1031.06948860467
+	Proposed: x ~ 1 + PETseasonality + PETWettestQuarter + bio14 + bio15 + bio18
+	AIC(k=2): 1032.20763724129
+	Proposed: x ~ 1 + PETseasonality + OrganicCarbon + bio14 + bio15 + bio18
+	AIC(k=2): 1031.33783613193
+	Proposed: x ~ 1 + PETseasonality + PhCaCL + bio14 + bio15 + bio18
+	AIC(k=2): 1032.11462735617
+	Proposed: x ~ 1 + PETseasonality + Slope + bio14 + bio15 + bio18
+	AIC(k=2): 1032.20902374375
+	Proposed: x ~ 1 + PETseasonality + bio2 + bio14 + bio15 + bio18
+	AIC(k=2): 1032.08971237366
+	Proposed: x ~ 1 + PETseasonality + bio14 + bio15 + bio18 + bio19
+	AIC(k=2): 1031.5411558086
+----------
+Step 5
+Current model: x ~ 1 + PETseasonality + bio14 + bio15 + bio18
+AIC(k=2): 1030.24779943679
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+1030.2 -509.1 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-17.167  -4.864   0.629   6.175 116.819 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 21.61749 
+
+Coefficients:
+               Estimate   StdErr t.value   p.value    
+(Intercept)      7.5865  19.4516  0.3900 0.6972686    
+PETseasonality   3.4135   1.7845  1.9128 0.0583478 .  
+bio14          -10.5024   2.7392 -3.8341 0.0002095 ***
+bio15           -7.1019   1.8399 -3.8600 0.0001909 ***
+bio18            4.9151   1.7819  2.7583 0.0067968 ** 
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.1669	Adjusted R-squared: 0.1368 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1643.50966363503
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1643.7668824866
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1645.14091427941
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1645.23570228954
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1644.86853315214
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1644.61919256423
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1645.10256229279
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1645.50668012782
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1645.4729860074
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1645.35012159566
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1645.48797421487
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1645.31701974967
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1645.34751854077
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1645.49583662789
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1645.45904016203
+----------
+Step 1
+Current model: x ~ 1
+AIC(k=2): 1643.50966363503
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+1643.5 -819.8 
+
+Raw residuals:
+   Min     1Q Median     3Q    Max 
+-942.0 -665.6 -414.7 -238.8 1660.6 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 5103.398 
+
+Coefficients:
+            Estimate  StdErr t.value   p.value    
+(Intercept)  1080.63  292.31  3.6968 0.0003384 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared:     0	Adjusted R-squared:     0 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 891.953650269045
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 893.805637072624
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 893.947420573131
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 893.351185926457
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 893.036456179588
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 893.66565199183
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 893.266233966998
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 893.066788993074
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 886.273123427828
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 893.876834992665
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 891.793362203247
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 890.773179573659
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 881.676156323126
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 893.425434236623
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 892.828009928189
+----------
+Step 1
+Current model: x ~ 1 + bio15
+AIC(k=2): 881.676156323126
+	Proposed: x ~ 1 + Aspect + bio15
+	AIC(k=2): 878.904903514249
+	Proposed: x ~ 1 + BulkDensity + bio15
+	AIC(k=2): 873.545403754759
+	Proposed: x ~ 1 + ClayPercentage + bio15
+	AIC(k=2): 883.371904674115
+	Proposed: x ~ 1 + PETDriestQuarter + bio15
+	AIC(k=2): 878.269361632131
+	Proposed: x ~ 1 + PETseasonality + bio15
+	AIC(k=2): 880.243026253641
+	Proposed: x ~ 1 + PETWettestQuarter + bio15
+	AIC(k=2): 883.358013919864
+	Proposed: x ~ 1 + OrganicCarbon + bio15
+	AIC(k=2): 883.659276244629
+	Proposed: x ~ 1 + PhCaCL + bio15
+	AIC(k=2): 881.468161562647
+	Proposed: x ~ 1 + Slope + bio15
+	AIC(k=2): 882.975120332128
+	Proposed: x ~ 1 + bio2 + bio15
+	AIC(k=2): 881.88394041503
+	Proposed: x ~ 1 + bio14 + bio15
+	AIC(k=2): 881.713842782433
+	Proposed: x ~ 1 + bio15 + bio18
+	AIC(k=2): 880.854231749821
+	Proposed: x ~ 1 + bio15 + bio19
+	AIC(k=2): 882.401604463993
+----------
+Step 2
+Current model: x ~ 1 + BulkDensity + bio15
+AIC(k=2): 873.545403754759
+	Proposed: x ~ 1 + Aspect + BulkDensity + bio15
+	AIC(k=2): 875.470922854396
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + bio15
+	AIC(k=2): 874.906142440095
+	Proposed: x ~ 1 + BulkDensity + PETDriestQuarter + bio15
+	AIC(k=2): 872.939219117381
+	Proposed: x ~ 1 + BulkDensity + PETseasonality + bio15
+	AIC(k=2): 873.989338958788
+	Proposed: x ~ 1 + BulkDensity + PETWettestQuarter + bio15
+	AIC(k=2): 875.252025289519
+	Proposed: x ~ 1 + BulkDensity + OrganicCarbon + bio15
+	AIC(k=2): 874.825405600063
+	Proposed: x ~ 1 + BulkDensity + PhCaCL + bio15
+	AIC(k=2): 870.458775868663
+	Proposed: x ~ 1 + BulkDensity + Slope + bio15
+	AIC(k=2): 875.219188074226
+	Proposed: x ~ 1 + BulkDensity + bio2 + bio15
+	AIC(k=2): 875.195357484794
+	Proposed: x ~ 1 + BulkDensity + bio14 + bio15
+	AIC(k=2): 875.483238088995
+	Proposed: x ~ 1 + BulkDensity + bio15 + bio18
+	AIC(k=2): 875.532086276444
+	Proposed: x ~ 1 + BulkDensity + bio15 + bio19
+	AIC(k=2): 875.282105156434
+----------
+Step 3
+Current model: x ~ 1 + BulkDensity + PhCaCL + bio15
+AIC(k=2): 870.458775868663
+	Proposed: x ~ 1 + Aspect + BulkDensity + PhCaCL + bio15
+	AIC(k=2): 872.45374680317
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio15
+	AIC(k=2): 866.192610179183
+	Proposed: x ~ 1 + BulkDensity + PETDriestQuarter + PhCaCL + bio15
+	AIC(k=2): 870.732862823723
+	Proposed: x ~ 1 + BulkDensity + PETseasonality + PhCaCL + bio15
+	AIC(k=2): 872.451416398149
+	Proposed: x ~ 1 + BulkDensity + PETWettestQuarter + PhCaCL + bio15
+	AIC(k=2): 871.98952488657
+	Proposed: x ~ 1 + BulkDensity + OrganicCarbon + PhCaCL + bio15
+	AIC(k=2): 872.261675191963
+	Proposed: x ~ 1 + BulkDensity + PhCaCL + Slope + bio15
+	AIC(k=2): 872.296459617907
+	Proposed: x ~ 1 + BulkDensity + PhCaCL + bio2 + bio15
+	AIC(k=2): 872.35757781499
+	Proposed: x ~ 1 + BulkDensity + PhCaCL + bio14 + bio15
+	AIC(k=2): 871.976099768831
+	Proposed: x ~ 1 + BulkDensity + PhCaCL + bio15 + bio18
+	AIC(k=2): 871.908826066752
+	Proposed: x ~ 1 + BulkDensity + PhCaCL + bio15 + bio19
+	AIC(k=2): 871.061905060205
+----------
+Step 4
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio15
+AIC(k=2): 866.192610179183
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PhCaCL + bio15
+	AIC(k=2): 867.372219488632
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio15
+	AIC(k=2): 865.279933225469
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETseasonality + PhCaCL + bio15
+	AIC(k=2): 867.64203049282
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETWettestQuarter + PhCaCL + bio15
+	AIC(k=2): 868.155315271089
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + OrganicCarbon + PhCaCL + bio15
+	AIC(k=2): 867.583459134805
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + Slope + bio15
+	AIC(k=2): 868.15884006505
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio2 + bio15
+	AIC(k=2): 867.935800365794
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio14 + bio15
+	AIC(k=2): 867.071671527103
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio15 + bio18
+	AIC(k=2): 867.105893931063
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PhCaCL + bio15 + bio19
+	AIC(k=2): 867.964531246758
+----------
+Step 5
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio15
+AIC(k=2): 865.279933225469
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio15
+	AIC(k=2): 865.661038647628
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PETseasonality + PhCaCL + bio15
+	AIC(k=2): 866.883994686104
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PETWettestQuarter + PhCaCL + bio15
+	AIC(k=2): 866.919419020568
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + OrganicCarbon + PhCaCL + bio15
+	AIC(k=2): 866.200372120695
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + Slope + bio15
+	AIC(k=2): 867.270477365536
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio2 + bio15
+	AIC(k=2): 866.86574205322
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio14 + bio15
+	AIC(k=2): 865.020543783396
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio15 + bio18
+	AIC(k=2): 866.75957529402
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio15 + bio19
+	AIC(k=2): 865.34522130557
+----------
+Step 6
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio14 + bio15
+AIC(k=2): 865.020543783396
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio14 + bio15
+	AIC(k=2): 866.618644967672
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PETseasonality + PhCaCL + bio14 + bio15
+	AIC(k=2): 866.721011304202
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PETWettestQuarter + PhCaCL + bio14 + bio15
+	AIC(k=2): 865.50949373438
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + OrganicCarbon + PhCaCL + bio14 + bio15
+	AIC(k=2): 866.899636446889
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + Slope + bio14 + bio15
+	AIC(k=2): 867.007704169017
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 867.015030652982
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio14 + bio15 + bio18
+	AIC(k=2): 866.916115630548
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio14 + bio15 + bio19
+	AIC(k=2): 865.92954008383
+----------
+Step 7
+Current model: x ~ 1 + BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio14 + bio15
+AIC(k=2): 865.020543783396
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+ 865.0 -424.5 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-17.199  -2.005   3.876  13.605  86.908 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 12.31045 
+
+Coefficients:
+                 Estimate   StdErr t.value   p.value    
+(Intercept)        5.9053  15.2025  0.3884 0.6985582    
+BulkDensity      -14.1757   4.4141 -3.2114 0.0018029 ** 
+ClayPercentage     6.8853   2.3633  2.9134 0.0044566 ** 
+PETDriestQuarter  -4.7125   2.4020 -1.9619 0.0527012 .  
+PhCaCL            12.5675   3.5557  3.5345 0.0006332 ***
+bio14              3.5106   2.4067  1.4587 0.1479455    
+bio15              9.8730   2.2764  4.3370 3.596e-05 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.3173	Adjusted R-squared: 0.2742 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 211.130607053687
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 211.71283109993
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 212.747270419885
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 212.980995339346
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 213.09289830555
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 213.124041015799
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 213.11508155533
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 213.112530928403
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 213.101955058744
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 212.955057632392
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 212.019406562063
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 212.002895025313
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 212.772922856001
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 212.318534967109
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 213.120282570015
+----------
+Step 1
+Current model: x ~ 1
+AIC(k=2): 211.130607053687
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+ 211.1 -103.6 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-2.1888 -0.1888 -0.1888 -0.1888  7.8112 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 0.05310811 
+
+Coefficients:
+            Estimate StdErr t.value   p.value    
+(Intercept)   4.1888 1.0781  3.8854 0.0002293 ***
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared:     0	Adjusted R-squared:     0 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1159.28515289084
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1158.92421179224
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1160.78601063891
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1161.25860422785
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1160.87149295544
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1160.44785786723
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1160.42705635132
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1161.23281371475
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1157.44602311315
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1154.91230265511
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1161.00351689304
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1154.96700948955
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1160.03998159126
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1158.53266469131
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1156.9805847276
+----------
+Step 1
+Current model: x ~ 1 + Slope
+AIC(k=2): 1154.91230265511
+	Proposed: x ~ 1 + Aspect + Slope
+	AIC(k=2): 1150.81155577744
+	Proposed: x ~ 1 + BulkDensity + Slope
+	AIC(k=2): 1156.82903969038
+	Proposed: x ~ 1 + ClayPercentage + Slope
+	AIC(k=2): 1156.90424102524
+	Proposed: x ~ 1 + PETDriestQuarter + Slope
+	AIC(k=2): 1156.54157462692
+	Proposed: x ~ 1 + PETseasonality + Slope
+	AIC(k=2): 1154.29101282452
+	Proposed: x ~ 1 + PETWettestQuarter + Slope
+	AIC(k=2): 1156.76289328878
+	Proposed: x ~ 1 + OrganicCarbon + Slope
+	AIC(k=2): 1156.81177933338
+	Proposed: x ~ 1 + PhCaCL + Slope
+	AIC(k=2): 1152.89203650824
+	Proposed: x ~ 1 + Slope + bio2
+	AIC(k=2): 1156.90331336357
+	Proposed: x ~ 1 + Slope + bio14
+	AIC(k=2): 1152.43520248849
+	Proposed: x ~ 1 + Slope + bio15
+	AIC(k=2): 1155.9713833033
+	Proposed: x ~ 1 + Slope + bio18
+	AIC(k=2): 1155.30427723442
+	Proposed: x ~ 1 + Slope + bio19
+	AIC(k=2): 1154.49643282803
+----------
+Step 2
+Current model: x ~ 1 + Aspect + Slope
+AIC(k=2): 1150.81155577744
+	Proposed: x ~ 1 + Aspect + BulkDensity + Slope
+	AIC(k=2): 1152.78451995212
+	Proposed: x ~ 1 + Aspect + ClayPercentage + Slope
+	AIC(k=2): 1152.31777416046
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter + Slope
+	AIC(k=2): 1152.76615490241
+	Proposed: x ~ 1 + Aspect + PETseasonality + Slope
+	AIC(k=2): 1151.18820293889
+	Proposed: x ~ 1 + Aspect + PETWettestQuarter + Slope
+	AIC(k=2): 1152.79834714408
+	Proposed: x ~ 1 + Aspect + OrganicCarbon + Slope
+	AIC(k=2): 1152.77528748085
+	Proposed: x ~ 1 + Aspect + PhCaCL + Slope
+	AIC(k=2): 1150.50397353366
+	Proposed: x ~ 1 + Aspect + Slope + bio2
+	AIC(k=2): 1152.70962037834
+	Proposed: x ~ 1 + Aspect + Slope + bio14
+	AIC(k=2): 1148.96898672958
+	Proposed: x ~ 1 + Aspect + Slope + bio15
+	AIC(k=2): 1150.73295481432
+	Proposed: x ~ 1 + Aspect + Slope + bio18
+	AIC(k=2): 1152.47823836258
+	Proposed: x ~ 1 + Aspect + Slope + bio19
+	AIC(k=2): 1151.78486964471
+----------
+Step 3
+Current model: x ~ 1 + Aspect + Slope + bio14
+AIC(k=2): 1148.96898672958
+	Proposed: x ~ 1 + Aspect + BulkDensity + Slope + bio14
+	AIC(k=2): 1150.03330371851
+	Proposed: x ~ 1 + Aspect + ClayPercentage + Slope + bio14
+	AIC(k=2): 1149.77223831032
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter + Slope + bio14
+	AIC(k=2): 1150.94482794606
+	Proposed: x ~ 1 + Aspect + PETseasonality + Slope + bio14
+	AIC(k=2): 1148.07720680987
+	Proposed: x ~ 1 + Aspect + PETWettestQuarter + Slope + bio14
+	AIC(k=2): 1150.93350123651
+	Proposed: x ~ 1 + Aspect + OrganicCarbon + Slope + bio14
+	AIC(k=2): 1150.96897892371
+	Proposed: x ~ 1 + Aspect + PhCaCL + Slope + bio14
+	AIC(k=2): 1150.8333954268
+	Proposed: x ~ 1 + Aspect + Slope + bio2 + bio14
+	AIC(k=2): 1150.77575555873
+	Proposed: x ~ 1 + Aspect + Slope + bio14 + bio15
+	AIC(k=2): 1150.92379381076
+	Proposed: x ~ 1 + Aspect + Slope + bio14 + bio18
+	AIC(k=2): 1150.81324382556
+	Proposed: x ~ 1 + Aspect + Slope + bio14 + bio19
+	AIC(k=2): 1150.89001701264
+----------
+Step 4
+Current model: x ~ 1 + Aspect + PETseasonality + Slope + bio14
+AIC(k=2): 1148.07720680987
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + Slope + bio14
+	AIC(k=2): 1149.78864526318
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PETseasonality + Slope + bio14
+	AIC(k=2): 1149.75702441049
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter + PETseasonality + Slope + bio14
+	AIC(k=2): 1150.06788751232
+	Proposed: x ~ 1 + Aspect + PETseasonality + PETWettestQuarter + Slope + bio14
+	AIC(k=2): 1149.91965011977
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + Slope + bio14
+	AIC(k=2): 1149.92420384482
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + Slope + bio14
+	AIC(k=2): 1148.97112336453
+	Proposed: x ~ 1 + Aspect + PETseasonality + Slope + bio2 + bio14
+	AIC(k=2): 1150.07696257964
+	Proposed: x ~ 1 + Aspect + PETseasonality + Slope + bio14 + bio15
+	AIC(k=2): 1149.89476360937
+	Proposed: x ~ 1 + Aspect + PETseasonality + Slope + bio14 + bio18
+	AIC(k=2): 1150.0744335283
+	Proposed: x ~ 1 + Aspect + PETseasonality + Slope + bio14 + bio19
+	AIC(k=2): 1150.06304530651
+----------
+Step 5
+Current model: x ~ 1 + Aspect + PETseasonality + Slope + bio14
+AIC(k=2): 1148.07720680987
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+  1148   -568 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-240.77 -152.03  -95.60  -23.06  321.75 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 337.3024 
+
+Coefficients:
+               Estimate  StdErr t.value  p.value   
+(Intercept)     246.468  77.156  3.1944 0.001919 **
+Aspect          -38.864  19.392 -2.0041 0.047996 * 
+PETseasonality  -17.003  10.190 -1.6685 0.098609 . 
+Slope           -32.185  10.676 -3.0146 0.003325 **
+bio14           -20.340   9.117 -2.2310 0.028109 * 
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.1796	Adjusted R-squared: 0.144 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 2398.35859070087
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 2208.6532480484
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 2380.70742205486
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 2386.89860881747
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 2397.35359788061
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 2210.0932714654
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 2286.4715850307
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 2300.53412804981
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 2384.25645706141
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 2327.39449486048
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 2288.97621116533
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 2378.33353154677
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 2383.82219655855
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 2395.90351235977
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 2370.16394596607
+----------
+Step 1
+Current model: x ~ 1 + Aspect
+AIC(k=2): 2208.6532480484
+	Proposed: x ~ 1 + Aspect + BulkDensity
+	AIC(k=2): 2173.55065916052
+	Proposed: x ~ 1 + Aspect + ClayPercentage
+	AIC(k=2): 2208.09885459759
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter
+	AIC(k=2): 2208.97594417931
+	Proposed: x ~ 1 + Aspect + PETseasonality
+	AIC(k=2): 2138.62014427841
+	Proposed: x ~ 1 + Aspect + PETWettestQuarter
+	AIC(k=2): 2179.06876552127
+	Proposed: x ~ 1 + Aspect + OrganicCarbon
+	AIC(k=2): 2142.69912215062
+	Proposed: x ~ 1 + Aspect + PhCaCL
+	AIC(k=2): 2189.15548684947
+	Proposed: x ~ 1 + Aspect + Slope
+	AIC(k=2): 2163.45820504748
+	Proposed: x ~ 1 + Aspect + bio2
+	AIC(k=2): 2196.59900443638
+	Proposed: x ~ 1 + Aspect + bio14
+	AIC(k=2): 2206.02459216527
+	Proposed: x ~ 1 + Aspect + bio15
+	AIC(k=2): 2210.59917515581
+	Proposed: x ~ 1 + Aspect + bio18
+	AIC(k=2): 2206.67992845088
+	Proposed: x ~ 1 + Aspect + bio19
+	AIC(k=2): 2203.04646815804
+----------
+Step 2
+Current model: x ~ 1 + Aspect + PETseasonality
+AIC(k=2): 2138.62014427841
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality
+	AIC(k=2): 2140.37281466457
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PETseasonality
+	AIC(k=2): 2139.20481757838
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter + PETseasonality
+	AIC(k=2): 2140.56008688902
+	Proposed: x ~ 1 + Aspect + PETseasonality + PETWettestQuarter
+	AIC(k=2): 2131.846917784
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon
+	AIC(k=2): 2129.93722380774
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL
+	AIC(k=2): 2125.46252781108
+	Proposed: x ~ 1 + Aspect + PETseasonality + Slope
+	AIC(k=2): 2139.07248406248
+	Proposed: x ~ 1 + Aspect + PETseasonality + bio2
+	AIC(k=2): 2135.01385707669
+	Proposed: x ~ 1 + Aspect + PETseasonality + bio14
+	AIC(k=2): 2136.02760466728
+	Proposed: x ~ 1 + Aspect + PETseasonality + bio15
+	AIC(k=2): 2139.26647477943
+	Proposed: x ~ 1 + Aspect + PETseasonality + bio18
+	AIC(k=2): 2132.46481776594
+	Proposed: x ~ 1 + Aspect + PETseasonality + bio19
+	AIC(k=2): 2139.3769295438
+----------
+Step 3
+Current model: x ~ 1 + Aspect + PETseasonality + PhCaCL
+AIC(k=2): 2125.46252781108
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + PhCaCL
+	AIC(k=2): 2127.35504614604
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PETseasonality + PhCaCL
+	AIC(k=2): 2127.33111020541
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter + PETseasonality + PhCaCL
+	AIC(k=2): 2127.4179926416
+	Proposed: x ~ 1 + Aspect + PETseasonality + PETWettestQuarter + PhCaCL
+	AIC(k=2): 2122.40370347762
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + PhCaCL
+	AIC(k=2): 2122.67800411211
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + Slope
+	AIC(k=2): 2127.37617103686
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2
+	AIC(k=2): 2111.76219347087
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio14
+	AIC(k=2): 2125.79370263899
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio15
+	AIC(k=2): 2126.54809790351
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio18
+	AIC(k=2): 2121.25093546001
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio19
+	AIC(k=2): 2117.83573736288
+----------
+Step 4
+Current model: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2
+AIC(k=2): 2111.76219347087
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + PhCaCL + bio2
+	AIC(k=2): 2112.43513740153
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PETseasonality + PhCaCL + bio2
+	AIC(k=2): 2113.43458087345
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter + PETseasonality + PhCaCL + bio2
+	AIC(k=2): 2113.75241988016
+	Proposed: x ~ 1 + Aspect + PETseasonality + PETWettestQuarter + PhCaCL + bio2
+	AIC(k=2): 2113.76076119674
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + PhCaCL + bio2
+	AIC(k=2): 2112.5534338093
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + Slope + bio2
+	AIC(k=2): 2113.02402172724
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2 + bio14
+	AIC(k=2): 2108.52457668863
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2 + bio15
+	AIC(k=2): 2107.61344055644
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2 + bio18
+	AIC(k=2): 2108.36873820791
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2 + bio19
+	AIC(k=2): 2109.53667773873
+----------
+Step 5
+Current model: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2 + bio15
+AIC(k=2): 2107.61344055644
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + PhCaCL + bio2 + bio15
+	AIC(k=2): 2109.5400703844
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PETseasonality + PhCaCL + bio2 + bio15
+	AIC(k=2): 2109.55937644207
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter + PETseasonality + PhCaCL + bio2 + bio15
+	AIC(k=2): 2109.114658817
+	Proposed: x ~ 1 + Aspect + PETseasonality + PETWettestQuarter + PhCaCL + bio2 + bio15
+	AIC(k=2): 2109.11978690467
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2105.2238965016
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + Slope + bio2 + bio15
+	AIC(k=2): 2109.59360441438
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 2108.93942183468
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2 + bio15 + bio18
+	AIC(k=2): 2107.16571437512
+	Proposed: x ~ 1 + Aspect + PETseasonality + PhCaCL + bio2 + bio15 + bio19
+	AIC(k=2): 2105.60721356816
+----------
+Step 6
+Current model: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+AIC(k=2): 2105.2238965016
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2096.43135893113
+	Proposed: x ~ 1 + Aspect + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2102.97774271824
+	Proposed: x ~ 1 + Aspect + PETDriestQuarter + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2107.20179226731
+	Proposed: x ~ 1 + Aspect + PETseasonality + PETWettestQuarter + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2107.12500220931
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + PhCaCL + Slope + bio2 + bio15
+	AIC(k=2): 2105.347265938
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 2103.99161235239
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15 + bio18
+	AIC(k=2): 2105.50424924289
+	Proposed: x ~ 1 + Aspect + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15 + bio19
+	AIC(k=2): 2099.85300572573
+----------
+Step 7
+Current model: x ~ 1 + Aspect + BulkDensity + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+AIC(k=2): 2096.43135893113
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2094.34813540567
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETDriestQuarter + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2097.48680654681
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + PETWettestQuarter + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2098.06738498994
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + OrganicCarbon + PhCaCL + Slope + bio2 + bio15
+	AIC(k=2): 2098.42535994337
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 2098.18262246007
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15 + bio18
+	AIC(k=2): 2098.23196330391
+	Proposed: x ~ 1 + Aspect + BulkDensity + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15 + bio19
+	AIC(k=2): 2094.45439075108
+----------
+Step 8
+Current model: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+AIC(k=2): 2094.34813540567
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETDriestQuarter + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2095.09315645468
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + PETWettestQuarter + OrganicCarbon + PhCaCL + bio2 + bio15
+	AIC(k=2): 2095.85643916524
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + Slope + bio2 + bio15
+	AIC(k=2): 2096.1731633491
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio14 + bio15
+	AIC(k=2): 2096.30414999254
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15 + bio18
+	AIC(k=2): 2096.30243608125
+	Proposed: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15 + bio19
+	AIC(k=2): 2094.43221937766
+----------
+Step 9
+Current model: x ~ 1 + Aspect + BulkDensity + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
+AIC(k=2): 2094.34813540567
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+  2094  -1037 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-379.44 -103.66  -19.80   73.25  639.72 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 4593.795 
+
+Coefficients:
+               Estimate   StdErr t.value   p.value    
+(Intercept)      -6.190  285.743 -0.0217 0.9827479    
+Aspect         -123.997   33.614 -3.6889 0.0003224 ***
+BulkDensity     187.919   58.411  3.2172 0.0016106 ** 
+ClayPercentage   49.757   25.233  1.9719 0.0506085 .  
+PETseasonality  -93.656   32.084 -2.9191 0.0040961 ** 
+OrganicCarbon   327.524   75.121  4.3600 2.514e-05 ***
+PhCaCL          123.878   37.336  3.3179 0.0011577 ** 
+bio2            -91.540   31.810 -2.8777 0.0046386 ** 
+bio15            45.360   28.311  1.6022 0.1113733    
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.8849	Adjusted R-squared: 0.8783 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 898.055537887342
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 900.05538794026
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 899.749022585099
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 899.621466130924
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 899.904957508139
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 898.26415554767
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 899.7948507709
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 899.234263147544
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 899.351925450705
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 899.891977057602
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 899.883287541265
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 898.241009779477
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 897.265448579854
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 899.415649539863
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 899.482747113554
+----------
+Step 1
+Current model: x ~ 1 + bio15
+AIC(k=2): 897.265448579854
+	Proposed: x ~ 1 + Aspect + bio15
+	AIC(k=2): 899.047056233392
+	Proposed: x ~ 1 + BulkDensity + bio15
+	AIC(k=2): 898.523045206336
+	Proposed: x ~ 1 + ClayPercentage + bio15
+	AIC(k=2): 899.254253915354
+	Proposed: x ~ 1 + PETDriestQuarter + bio15
+	AIC(k=2): 899.213374825647
+	Proposed: x ~ 1 + PETseasonality + bio15
+	AIC(k=2): 898.113409886153
+	Proposed: x ~ 1 + PETWettestQuarter + bio15
+	AIC(k=2): 898.681387244567
+	Proposed: x ~ 1 + OrganicCarbon + bio15
+	AIC(k=2): 899.135477142515
+	Proposed: x ~ 1 + PhCaCL + bio15
+	AIC(k=2): 899.000106393793
+	Proposed: x ~ 1 + Slope + bio15
+	AIC(k=2): 898.229243490747
+	Proposed: x ~ 1 + bio2 + bio15
+	AIC(k=2): 899.193130396835
+	Proposed: x ~ 1 + bio14 + bio15
+	AIC(k=2): 899.20310205018
+	Proposed: x ~ 1 + bio15 + bio18
+	AIC(k=2): 899.264632953688
+	Proposed: x ~ 1 + bio15 + bio19
+	AIC(k=2): 898.810837592452
+----------
+Step 2
+Current model: x ~ 1 + bio15
+AIC(k=2): 897.265448579854
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+ 897.3 -445.6 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-15.877 -10.420  -7.860  -4.205  33.818 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 3.083326 
+
+Coefficients:
+            Estimate   StdErr t.value   p.value    
+(Intercept) 27.20736  7.36348  3.6949 0.0003238 ***
+bio15        0.77543  0.46533  1.6664 0.0980559 .  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.02107	Adjusted R-squared: 0.01348 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 3470.2146609174
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 3472.11837618171
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 3472.20657874496
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 3472.12298529252
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 3471.07368384398
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 3471.95142397644
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 3472.19295314696
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 3471.9966300126
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 3471.97520286323
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 3472.1940184029
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 3471.76464311413
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 3471.97221078508
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 3472.02229456221
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 3471.8881564243
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 3471.8469758855
+----------
+Step 1
+Current model: x ~ 1
+AIC(k=2): 3470.2146609174
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+  3470  -1733 
+
+Raw residuals:
+   Min     1Q Median     3Q    Max 
+-97417 -92777 -83895 -59875 359393 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 64942627 
+
+Coefficients:
+            Estimate StdErr t.value  p.value   
+(Intercept)    97795  32920  2.9707 0.003476 **
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared:     0	Adjusted R-squared:     0 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 596.728869130626
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 598.527542801003
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 598.701355030782
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 598.604180287071
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 596.284836207407
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 597.253546030282
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 598.339322114013
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 597.062898884885
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 592.737219863394
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 590.98031683898
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 598.630444747101
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 598.468621453946
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 598.453584774444
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 595.077677648182
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 598.411383519884
+----------
+Step 1
+Current model: x ~ 1 + Slope
+AIC(k=2): 590.98031683898
+	Proposed: x ~ 1 + Aspect + Slope
+	AIC(k=2): 592.764343899704
+	Proposed: x ~ 1 + BulkDensity + Slope
+	AIC(k=2): 592.977900112535
+	Proposed: x ~ 1 + ClayPercentage + Slope
+	AIC(k=2): 591.886085103536
+	Proposed: x ~ 1 + PETDriestQuarter + Slope
+	AIC(k=2): 591.115272819663
+	Proposed: x ~ 1 + PETseasonality + Slope
+	AIC(k=2): 590.439678767783
+	Proposed: x ~ 1 + PETWettestQuarter + Slope
+	AIC(k=2): 592.935459832657
+	Proposed: x ~ 1 + OrganicCarbon + Slope
+	AIC(k=2): 592.556294785287
+	Proposed: x ~ 1 + PhCaCL + Slope
+	AIC(k=2): 588.387894810804
+	Proposed: x ~ 1 + Slope + bio2
+	AIC(k=2): 592.949895332602
+	Proposed: x ~ 1 + Slope + bio14
+	AIC(k=2): 592.270548277296
+	Proposed: x ~ 1 + Slope + bio15
+	AIC(k=2): 592.906939918291
+	Proposed: x ~ 1 + Slope + bio18
+	AIC(k=2): 592.913132080685
+	Proposed: x ~ 1 + Slope + bio19
+	AIC(k=2): 592.578259757063
+----------
+Step 2
+Current model: x ~ 1 + PhCaCL + Slope
+AIC(k=2): 588.387894810804
+	Proposed: x ~ 1 + Aspect + PhCaCL + Slope
+	AIC(k=2): 590.319981234844
+	Proposed: x ~ 1 + BulkDensity + PhCaCL + Slope
+	AIC(k=2): 589.07073731531
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL + Slope
+	AIC(k=2): 590.048736219444
+	Proposed: x ~ 1 + PETDriestQuarter + PhCaCL + Slope
+	AIC(k=2): 589.351378763016
+	Proposed: x ~ 1 + PETseasonality + PhCaCL + Slope
+	AIC(k=2): 589.552044955538
+	Proposed: x ~ 1 + PETWettestQuarter + PhCaCL + Slope
+	AIC(k=2): 590.320041038786
+	Proposed: x ~ 1 + OrganicCarbon + PhCaCL + Slope
+	AIC(k=2): 590.332066750484
+	Proposed: x ~ 1 + PhCaCL + Slope + bio2
+	AIC(k=2): 589.383083816965
+	Proposed: x ~ 1 + PhCaCL + Slope + bio14
+	AIC(k=2): 590.315093498517
+	Proposed: x ~ 1 + PhCaCL + Slope + bio15
+	AIC(k=2): 588.948350023507
+	Proposed: x ~ 1 + PhCaCL + Slope + bio18
+	AIC(k=2): 590.048065447454
+	Proposed: x ~ 1 + PhCaCL + Slope + bio19
+	AIC(k=2): 590.109747837198
+----------
+Step 3
+Current model: x ~ 1 + PhCaCL + Slope
+AIC(k=2): 588.387894810804
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+ 588.4 -290.2 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+-50.579  -3.159   4.658  15.890  37.870 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 11.66195 
+
+Coefficients:
+            Estimate  StdErr t.value   p.value    
+(Intercept)  52.7964 14.7423  3.5813 0.0006478 ***
+PhCaCL       -6.1861  2.9026 -2.1313 0.0367970 *  
+Slope        -4.7576  1.8863 -2.5222 0.0140824 *  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+R-squared: 0.1638	Adjusted R-squared: 0.1384 
+----------
+Starting model: x ~ 1
+Direction: forward
+AIC(k=2): 1664.6473653754
+	Proposed: x ~ 1 + Aspect
+	AIC(k=2): 1665.65161913436
+	Proposed: x ~ 1 + BulkDensity
+	AIC(k=2): 1664.95599072316
+	Proposed: x ~ 1 + ClayPercentage
+	AIC(k=2): 1663.99137576233
+	Proposed: x ~ 1 + PETDriestQuarter
+	AIC(k=2): 1666.36544081358
+	Proposed: x ~ 1 + PETseasonality
+	AIC(k=2): 1666.32469972333
+	Proposed: x ~ 1 + PETWettestQuarter
+	AIC(k=2): 1665.29169348355
+	Proposed: x ~ 1 + OrganicCarbon
+	AIC(k=2): 1666.4037285557
+	Proposed: x ~ 1 + PhCaCL
+	AIC(k=2): 1666.55640529022
+	Proposed: x ~ 1 + Slope
+	AIC(k=2): 1665.75844072589
+	Proposed: x ~ 1 + bio2
+	AIC(k=2): 1665.1047952083
+	Proposed: x ~ 1 + bio14
+	AIC(k=2): 1666.60047793028
+	Proposed: x ~ 1 + bio15
+	AIC(k=2): 1666.39120375382
+	Proposed: x ~ 1 + bio18
+	AIC(k=2): 1666.36592035671
+	Proposed: x ~ 1 + bio19
+	AIC(k=2): 1666.6333422611
+----------
+Step 1
+Current model: x ~ 1 + ClayPercentage
+AIC(k=2): 1663.99137576233
+	Proposed: x ~ 1 + Aspect + ClayPercentage
+	AIC(k=2): 1665.36361888674
+	Proposed: x ~ 1 + BulkDensity + ClayPercentage
+	AIC(k=2): 1664.29907696256
+	Proposed: x ~ 1 + ClayPercentage + PETDriestQuarter
+	AIC(k=2): 1665.96847107201
+	Proposed: x ~ 1 + ClayPercentage + PETseasonality
+	AIC(k=2): 1664.90049134491
+	Proposed: x ~ 1 + ClayPercentage + PETWettestQuarter
+	AIC(k=2): 1665.07688212114
+	Proposed: x ~ 1 + ClayPercentage + OrganicCarbon
+	AIC(k=2): 1665.40414196234
+	Proposed: x ~ 1 + ClayPercentage + PhCaCL
+	AIC(k=2): 1665.31491228565
+	Proposed: x ~ 1 + ClayPercentage + Slope
+	AIC(k=2): 1664.97945534553
+	Proposed: x ~ 1 + ClayPercentage + bio2
+	AIC(k=2): 1664.4931993762
+	Proposed: x ~ 1 + ClayPercentage + bio14
+	AIC(k=2): 1665.6232563107
+	Proposed: x ~ 1 + ClayPercentage + bio15
+	AIC(k=2): 1665.67654149411
+	Proposed: x ~ 1 + ClayPercentage + bio18
+	AIC(k=2): 1665.98423372812
+	Proposed: x ~ 1 + ClayPercentage + bio19
+	AIC(k=2): 1665.81459250732
+----------
+Step 2
+Current model: x ~ 1 + ClayPercentage
+AIC(k=2): 1663.99137576233
+---END
+
+Call:
+phylolm(formula = create.formula(plm), data = data, phy = phy, 
+    model = model, lower.bound = lower.bound, upper.bound = upper.bound, 
+    starting.value = starting.value)
+
+   AIC logLik 
+  1664   -829 
+
+Raw residuals:
+    Min      1Q  Median      3Q     Max 
+ -93.46  -58.32  -36.55    9.20 2651.16 
+
+Mean tip height: 87.3
+Parameter estimate(s) using ML:
+sigma2: 3888.644 
+
+Coefficients:
+               Estimate  StdErr t.value p.value
+(Intercept)      67.355 261.328  0.2577  0.7971
+ClayPercentage  -58.317  35.888 -1.6250  0.1069
+
+R-squared: 0.02226	Adjusted R-squared: 0.01383 
