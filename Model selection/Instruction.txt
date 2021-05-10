@@ -1,0 +1,4 @@
+We choose Generalized Linear Model (GLM) to analyze the relationship between ungulate traits
+and ecology variables. According to the result of VIF analysis, columns from "Predictor" are
+used as independent variables. Take one column from "ungulatesTraits" at a time as the
+dependent variable. For the model selection the phylolm package and phyloglmstep function are required.
