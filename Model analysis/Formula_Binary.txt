@@ -1,8 +1,3 @@
-x ~ 1 + PETWettestQuarter + OrganicCarbon
-x ~ 1 + bio19
-x ~ 1 + OrganicCarbon
-x ~ 1 + Aspect + bio14 + bio15 + bio19
-x ~ 1 + bio18 + bio19
-x ~ 1 + BulkDensity + PETseasonality + OrganicCarbon + Slope + bio14 + bio15
-x ~ 1 + PETWettestQuarter + Slope + bio19
-x ~ 1 + bio14
+x ~ Aspect + bio14 + bio15 + bio19
+x ~ bio18 + bio19
+x ~ BulkDensity + PETseasonality + OrganicCarbon + Slope + bio14 + bio15
