@@ -1,0 +1,4 @@
+x ~ Aspect + BulkDensity + ClayPercentage + PhCaCL + Slope + bio2
+x ~ BulkDensity + ClayPercentage + PhCaCL + bio2 + bio14 + bio15
+x ~ BulkDensity + ClayPercentage + PETDriestQuarter + PhCaCL + bio14 + bio15
+x ~ Aspect + BulkDensity + ClayPercentage + PETseasonality + OrganicCarbon + PhCaCL + bio2 + bio15
