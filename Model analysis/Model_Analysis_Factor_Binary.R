@@ -3,7 +3,8 @@
 # Used to iterate over response variable
 i <- 1
 # Output the summary information
-sink("model_analysis_factor_binary_0525.txt", append = TRUE)
+sink("model_analysis_factor_binary_IG10_0527.txt", append = TRUE)
+# sink("model_analysis_factor_binary_MPLE_0525.txt", append = TRUE)
 
 mAnalysis_binary <- function(y, c1, c2, c3){ 
   # 'y' is for every formula,
@@ -33,6 +34,8 @@ mAnalysis_binary <- function(y, c1, c2, c3){
   
   # Using the phyloglm
   phyloGLM <- phyloglm(formula = f, data = glmData, phy = modelTree, 
+                         method = "logistic_IG10", btol = 36, log.alpha.bound = 4)
+  # phyloGLM <- phyloglm(formula = f, data = glmData, phy = modelTree, 
                          method = "logistic_MPLE", btol = 36, log.alpha.bound = 4)
   print(summary(phyloGLM))
     
