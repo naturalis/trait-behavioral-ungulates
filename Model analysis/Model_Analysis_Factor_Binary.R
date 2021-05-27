@@ -3,7 +3,7 @@
 # Used to iterate over response variable
 i <- 1
 # Output the summary information
-sink("model_analysis_factor_binary_0510.txt", append = TRUE)
+sink("model_analysis_factor_binary_0525.txt", append = TRUE)
 
 mAnalysis_binary <- function(y, c1, c2, c3){ 
   # 'y' is for every formula,
@@ -42,7 +42,7 @@ mAnalysis_binary <- function(y, c1, c2, c3){
   
 }
 
-apply(binFormulas, 1, mAnalysis_binary, c1=binData, c2=Predictors, c3=tree)
+apply(binFormulas, 1, mAnalysis_binary, c1=sig_binData, c2=Predictors, c3=tree)
 print(i)
 print('Finish')
 sink()
