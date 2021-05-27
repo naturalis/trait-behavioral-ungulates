@@ -1,0 +1,123 @@
+3.	Sociality
+Step 5
+Current model: x ~ 1 + Aspect + bio14 + bio15 + bio19
+AIC(k=2): 134.376549065067
+---END
+
+Call:
+phyloglm(formula = create.formula(plm), data = data, phy = phy, 
+    method = method, btol = btol, log.alpha.bound = log.alpha.bound, 
+    start.beta = start.beta, start.alpha = start.alpha, boot = boot, 
+    full.matrix = full.matrix)
+       AIC     logLik Pen.logLik 
+    134.38     -61.19     -55.97 
+
+Method: logistic_IG10
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.1095054 
+
+Coefficients:
+            Estimate   StdErr z.value   p.value    
+(Intercept) -1.25739  0.29717 -4.2312 2.325e-05 ***
+Aspect       1.01095  0.65364  1.5466  0.121949    
+bio14        1.40107  0.53159  2.6356  0.008399 ** 
+bio15        0.90962  0.39728  2.2896  0.022045 *  
+bio19        0.30048  0.30419  0.9878  0.323237    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.1095054
+
+4.	SocialHierarchy
+Step 3
+Current model: x ~ 1 + bio18 + bio19
+AIC(k=2): 160.833993249862
+---END
+
+Call:
+phyloglm(formula = create.formula(plm), data = data, phy = phy, 
+    method = method, btol = btol, log.alpha.bound = log.alpha.bound, 
+    start.beta = start.beta, start.alpha = start.alpha, boot = boot, 
+    full.matrix = full.matrix)
+       AIC     logLik Pen.logLik 
+    160.83     -76.42     -72.14 
+
+Method: logistic_IG10
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.06979109 
+
+Coefficients:
+             Estimate    StdErr z.value p.value  
+(Intercept)  0.048174  0.277845  0.1734 0.86235  
+bio18       -0.554051  0.232810 -2.3798 0.01732 *
+bio19       -0.483253  0.223945 -2.1579 0.03094 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.06979109
+
+5.	YearRoundBreeding
+Step 7
+Current model: x ~ 1 + BulkDensity + PETseasonality + OrganicCarbon + Slope + bio14 + bio15
+AIC(k=2): 94.3386296181526
+---END
+
+Call:
+phyloglm(formula = create.formula(plm), data = data, phy = phy, 
+    method = method, btol = btol, log.alpha.bound = log.alpha.bound, 
+    start.beta = start.beta, start.alpha = start.alpha, boot = boot, 
+    full.matrix = full.matrix)
+       AIC     logLik Pen.logLik 
+     94.34     -39.17     -35.25 
+
+Method: logistic_IG10
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.1508846 
+
+Coefficients:
+               Estimate   StdErr z.value  p.value   
+(Intercept)    -0.80191  0.47630 -1.6836 0.092254 . 
+BulkDensity    -3.44175  1.51005 -2.2792 0.022654 * 
+PETseasonality -0.92009  0.42966 -2.1414 0.032241 * 
+OrganicCarbon  -5.19657  1.94136 -2.6768 0.007434 **
+Slope          -1.84271  0.57600 -3.1991 0.001378 **
+bio14          -0.61401  0.56187 -1.0928 0.274484   
+bio15          -1.05034  0.58075 -1.8086 0.070514 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.1508846
+
+6.	DevelopmentStrategy
+Step 4
+Current model: x ~ 1 + PETWettestQuarter + Slope + bio19
+AIC(k=2): 108.316582087631
+---END
+
+Call:
+phyloglm(formula = create.formula(plm), data = data, phy = phy, 
+    method = method, btol = btol, log.alpha.bound = log.alpha.bound, 
+    start.beta = start.beta, start.alpha = start.alpha, boot = boot, 
+    full.matrix = full.matrix)
+       AIC     logLik Pen.logLik 
+    108.32     -49.16     -45.04 
+
+Method: logistic_IG10
+Mean tip height: 87.3
+Parameter estimate(s):
+alpha: 0.02443731 
+
+Coefficients:
+                  Estimate   StdErr z.value  p.value   
+(Intercept)        1.80868  0.72541  2.4933 0.012656 * 
+PETWettestQuarter -1.33264  0.50441 -2.6420 0.008242 **
+Slope             -1.44435  0.47538 -3.0383 0.002379 **
+bio19             -0.40840  0.24384 -1.6749 0.093953 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Note: Wald-type p-values for coefficients, conditional on alpha=0.02443731
+
