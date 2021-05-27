@@ -3,7 +3,7 @@
 # Used to iterate over response variable
 i <- 1
 # Output the summary information
-sink("model_analysis_factor_num.txt", append = TRUE)
+sink("model_analysis_num_0525.txt", append = TRUE)
 
 mAnalysis_binary <- function(y, c1, c2, c3){ 
   # 'y' is for every formula,
@@ -34,7 +34,7 @@ mAnalysis_binary <- function(y, c1, c2, c3){
   # Using the phyloglm
   phyloLM <- phylolm(formula = f, data = lmData, phy = modelTree, model = "BM",
                      lower.bound = NULL, upper.bound = NULL, starting.value = NULL, 
-                     measurement_error = FALSE, boot=0,full.matrix = TRUE)
+                     measurement_error = FALSE, boot=0, full.matrix = TRUE)
   print(summary(phyloLM))
   
   i <<- i+1
@@ -43,7 +43,7 @@ mAnalysis_binary <- function(y, c1, c2, c3){
   
 }
 
-apply(numFormulas, 1, mAnalysis_num, c1=numData, c2=Predictors, c3=tree)
+apply(numFormulas, 1, mAnalysis_num, c1=sig_numData, c2=Predictors, c3=tree)
 print(i)
 print('Finish')
 sink()
