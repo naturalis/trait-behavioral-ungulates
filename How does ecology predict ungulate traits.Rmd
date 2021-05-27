@@ -147,16 +147,20 @@ binData <- subset(Responser,select = c("Domestication", "X12.1_HabitatBreadth", 
 multiData <- subset(Responser, select = c("X1.1_ActivityCycle", "MatingSystem", "NaturalPredators", "NumMales", "X6.1_DietBreadth"))
 numData <- subset(Responser, select = -c(Domestication, X12.1_HabitatBreadth, X6.2_TrophicLevel, Sociality, SocialHierarchy, YearRoundBreeding, DevelopmentStrategy, HeadOrnaments, X1.1_ActivityCycle, MatingSystem, NaturalPredators, NumMales, X6.1_DietBreadth))
 
-
 # Do the model selection   
 source("Model_Selection_Num.R")
 # source("Model_Selection_Factor_Multi.R")
 source("Model_Selection_Factor_Binary.R")
 
-#The final models stored in the documents are organized orderly into three new documents:"Formula_binary.txt", "Formula_multi.txt", "Formula_num.txt"
+# According to the summary information stored in the txt documents, we choose traits that possess significant predictor variables as well as a R-squared value higher than 0.2 (for numeric traits) as interests to continue to do the research.
+sig_binData <- subset(binData,select = c(Sociality, SocialHierarchy, YearRoundBreeding))
+sig_numData <- subset(numData, select = c(X22.1_HomeRange_km2,	X15.1_LitterSize, X10.2_SocialGrpSize, AVGFoodConsumption))
+# sig_multiData <- subset(multiData, select = c())
+
+# The final models are organized orderly into three new documents:"Formula_binary.txt", "Formula_multi.txt" and "Formula_num.txt"
 
 # Remove unneeded variables
-# rm(Responser)
+rm(dataset, ecology, Responser)
 ```
 
 # 5 Modelling analysis 
@@ -169,7 +173,7 @@ numFormulas <- read.table("Formula_num.txt", sep = "\n")
 
 source("Model_Analysis_Factor_Binary.R")
 # source("Model_Analysis_Factor_Multi.R")
-# source("Model_Analysis_Factor_Num.R")
+source("Model_Analysis_Num.R")
 ```
 
 
