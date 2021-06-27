@@ -26,7 +26,7 @@ plot(phyloGLM)
 lines(lowess(fitted,residuals),col="black",lwd=2)
 
 # bio18
-plot(glmData$bio18,residuals(phyloGLM),col=c("blue","red"))
+plot(glmData$bio18,residuals(phyloGLM),col=c("blue","red")) + text(glmData$bio18,residuals(phyloGLM), cex=0.6, pos=1, col="red")
 lines(lowess(glmData$bio18,residuals(phyloGLM)),col="black",lwd=2)
 lines(lowess(glmData$bio18[glmData$SocialHierarchy==0],residuals(phyloGLM)[glmData$SocialHierarchy==0]),col="blue")
 lines(lowess(glmData$bio18[glmData$SocialHierarchy==1],residuals(phyloGLM)[glmData$SocialHierarchy==1]),col="red")
