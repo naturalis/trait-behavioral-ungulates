@@ -135,7 +135,7 @@ dependent variable. For the model selection the phylolm package and phyloglmstep
 Responser <- ungulatesTraits[c(7:37)]
 # Find the factor variables with two levels and change the level '2' to '0', to meet the requirement of 'logistic' method.
 levels(Responser$Domestication)[levels(Responser$Domestication)==2]<-0
-levels(Responser$X12.1_HabitatBreadth)[levels(Responser$X12.1_HabitatBreadth)==2]<-0
+# levels(Responser$X12.1_HabitatBreadth)[levels(Responser$X12.1_HabitatBreadth)==2]<-0
 levels(Responser$X6.2_TrophicLevel)[levels(Responser$X6.2_TrophicLevel)==2]<-0
 levels(Responser$Sociality)[levels(Responser$Sociality)==2]<-0
 levels(Responser$SocialHierarchy)[levels(Responser$SocialHierarchy)==2]<-0
