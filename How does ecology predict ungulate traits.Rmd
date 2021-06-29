@@ -143,9 +143,9 @@ levels(Responser$YearRoundBreeding)[levels(Responser$YearRoundBreeding)==2]<-0
 levels(Responser$DevelopmentStrategy)[levels(Responser$DevelopmentStrategy)==2]<-0
 levels(Responser$HeadOrnaments)[levels(Responser$HeadOrnaments)==2]<-0
 # Divide the 'Responser' into three groups according to the types of variables: 'binaryData', 'multiData' and 'numData'.
-binData <- subset(Responser,select = c("Domestication", "X12.1_HabitatBreadth", "X6.2_TrophicLevel", "Sociality", "SocialHierarchy", "YearRoundBreeding", "DevelopmentStrategy", "HeadOrnaments"))
-multiData <- subset(Responser, select = c("X1.1_ActivityCycle", "MatingSystem", "NaturalPredators", "NumMales", "X6.1_DietBreadth"))
-numData <- subset(Responser, select = -c(Domestication, X12.1_HabitatBreadth, X6.2_TrophicLevel, Sociality, SocialHierarchy, YearRoundBreeding, DevelopmentStrategy, HeadOrnaments, X1.1_ActivityCycle, MatingSystem, NaturalPredators, NumMales, X6.1_DietBreadth))
+binData <- subset(Responser,select = c("Domestication", "X6.2_TrophicLevel", "Sociality", "SocialHierarchy", "YearRoundBreeding", "DevelopmentStrategy", "HeadOrnaments"))
+multiData <- subset(Responser, select = c("X1.1_ActivityCycle", "MatingSystem"))
+numData <- subset(Responser, select = -c(Domestication, X6.2_TrophicLevel, Sociality, SocialHierarchy, YearRoundBreeding, DevelopmentStrategy, HeadOrnaments, X1.1_ActivityCycle, MatingSystem))
 
 # Do the model selection   
 source("Model_Selection_Num.R")
