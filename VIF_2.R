@@ -6,7 +6,7 @@ Predictors <- ecology
 # traits. There is a lot of collinearity present. The corrplot package is used to 
 # visualize the collinearity between the traits, using the correlation matrix.
 matrix <- cor(Predictors, use = "pairwise.complete.obs")
-corrplot(matrix, type="lower", order = "hclust", tl.pos = "l", tl.col = "black", tl.cex = 0.4)
+corrplot::corrplot(matrix, type="lower", order = "hclust", tl.pos = "l", tl.col = "black", tl.cex = 0.6)
 
 
 ## CHECK CORRELATION MATRIX
@@ -23,7 +23,7 @@ vif(Predictors)
 # Check CORRELATION MATRIX
 # A visualization of the dataset after the cutoff value is implemented.
 matrix <- cor(Predictors, use = "pairwise.complete.obs")
-corrplot(matrix, type="lower", order = "hclust", tl.pos = "l", tl.col = "black", tl.cex = 0.7)
+corrplot::corrplot(matrix, type="lower", order = "hclust", tl.pos = "l", tl.col = "black", tl.cex = 0.8)
 
 
 ## VIF ANALYSIS
@@ -55,7 +55,7 @@ Predictors
 # The final correlation matrix is the final product after removing all highly correlated
 # traits.
 matrix <- cor(Predictors, use = "pairwise.complete.obs")
-corrplot(matrix, type="lower", order = "hclust", tl.pos = "l", tl.col = "black", tl.cex = 0.7)
+corrplot::corrplot(matrix, type="lower", order = "hclust", tl.pos = "l", tl.col = "black", tl.cex = 0.9)
 
 ## REMOVE VARIABLES
 rm(matrix, delColumn)
