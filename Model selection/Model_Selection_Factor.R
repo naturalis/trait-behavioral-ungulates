@@ -1,12 +1,12 @@
 ### Model Selection for Factor Traits that Contain 2 Levels
 
+# Output the summary information
+sink("model_selection_factor_binary.txt", append = TRUE)
+
 mSelection_binary <- function(x, c1, c2){ 
   # "x" is for dataset that contains every dependent variable,
   # "c1" is for dataset that contains the independent variables, 
   # "c2" is for the phylogeny
-  
-  # Output the summary information
-  sink("model_selection_factor_binary.txt", append = TRUE)
   
   ## Data Preparation
   
@@ -35,12 +35,13 @@ mSelection_binary <- function(x, c1, c2){
                               method= "logistic_IG10", direction = "forward", trace = 2, 
                               btol = 20, log.alpha.bound = 4, start.beta=NULL, 
                               start.alpha=NULL, boot = 0, full.matrix = TRUE, k=2)
-  summary(modelstep)
-  
+  print(summary(modelstep))
+  # print("One trait is finished.")
   # Remove the intermediate variable in preparation for the next model
-  rm(glmData, dropTips, modelTree, formula, modelstep)
+  rm(glmData, dropTips, modelTree, formula)
   
 }
 
 apply(binData, 2, mSelection_binary, c1=Predictors, c2=tree)
+print('Finish')
 sink()
