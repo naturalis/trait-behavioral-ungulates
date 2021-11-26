@@ -24,11 +24,11 @@ library(phylolm)
 library(performance)
 library(see)
 library(gridExtra)
+library(arm)
 ```
 
 ### Import data
-The datasets can be found in different GitHub repositories. The ungulate
-dataset and tree can be found in the trait-organismal-ungulates repository. 
+The datasets can be found in different GitHub repositories. The ungulate dataset and tree can be found in the trait-organismal-ungulates repository. 
 The OMI data is found in the trait-geo-diverse-ungulates repository.
 ```{r import data}
 ungulatesData <- read.csv("https://raw.githubusercontent.com/naturalis/trait-organismal-ungulates/master/data/CSV/ungulatesTraits.csv")
@@ -37,10 +37,7 @@ tree <- read.tree("https://raw.githubusercontent.com/naturalis/trait-organismal-
 ```
 
 ### Merge datasets
-The ungulate data and OMI data have to be merged into one dataset. The EoL-ID is
-removed and the data is merged by the canonical name (present in both the
-datasets). The last step is to replace the spaces in the canonical name with
-underscores, to match the species names in the tree.
+The ungulate data and OMI data have to be merged into one dataset. The EoL-ID is removed and the data is merged by the canonical name (present in both the datasets). The last step is to replace the spaces in the canonical name with underscores, to match the species names in the tree.
 ```{r merge data}
 ungulatesData <- ungulatesData[2:60]
 names(omi)[names(omi)=="X"] <- "CanonicalName"
@@ -73,10 +70,7 @@ rm(dropRows, dropTips)
 ```
 
 ### Miscellaneous preprocessing
-The dots in the column names are replaced with underscores. After that, the
-traits that consist of more than 100 missing values, traits that have no
-information gain and traits that are almost identical to other traits are
-removed.
+The dots in the column names are replaced with underscores. After that, the traits that consist of more than 100 missing values, traits that have no information gain and traits that are almost identical to other traits are removed.
 ```{r misc preprocessing}
 # Rename column with dots in the name
 names(dataset)[names(dataset)=="X21.1_PopulationDensity_n.km2"] <- "X21.1_PopulationDensity_n_km2"
@@ -88,23 +82,43 @@ dataset <- subset(dataset, select = -c(Motility, ParentalCare, X12.2_Terrestrial
 dataset <- subset(dataset, select = -c(PullStrength, NumOffspring, BreedingInterval, Diet, AVGWeight, MaturityReachFemale, MaturityReachMale, X22.2_HomeRange_Indiv_km2, X5.3_NeonateBodyMass_g, X16.1_LittersPerYear,X7.1_DispersalAge_d))
 ```
 
-### Set as factors
+### Set as factors and correct for 'YearRoundBreeding'
 Some of the columns are not seen as categorical, but as numeric. These must be converted
 to factors.
 ```{r as factor}
 dataset$Domestication <- as.factor(dataset$Domestication)
 dataset$X1.1_ActivityCycle <- as.factor(dataset$X1.1_ActivityCycle)
-# dataset$X6.1_DietBreadth <- as.factor(dataset$X6.1_DietBreadth)
-# dataset$X12.1_HabitatBreadth <- as.factor(dataset$X12.1_HabitatBreadth)
 dataset$X6.2_TrophicLevel <- as.factor(dataset$X6.2_TrophicLevel)
 dataset$Sociality <- as.factor(dataset$Sociality)
 dataset$SocialHierarchy <- as.factor(dataset$SocialHierarchy)
-# dataset$NumMales <- as.factor(dataset$NumMales)
 dataset$MatingSystem <- as.factor(dataset$MatingSystem)
 dataset$YearRoundBreeding <- as.factor(dataset$YearRoundBreeding)
 dataset$DevelopmentStrategy <- as.factor(dataset$DevelopmentStrategy)
 dataset$HeadOrnaments <- as.factor(dataset$HeadOrnaments)
-# dataset$NaturalPredators <- as.factor(dataset$NaturalPredators)
+
+# Correct some data of the trait "YearRoundBreeding"
+dataset['Madoqua_guentheri', 'YearRoundBreeding'] <- NA
+dataset['Muntiacus_muntjak', 'YearRoundBreeding'] <- 1
+dataset['Ozotoceros_bezoarticus', 'YearRoundBreeding'] <- 2
+dataset['Kobus_leche', 'YearRoundBreeding'] <- 2
+dataset['Hylochoerus_meinertzhageni', 'YearRoundBreeding'] <- 2
+dataset['Bos_frontalis_gaurus', 'YearRoundBreeding'] <- 1
+dataset['Boselaphus_tragocamelus', 'YearRoundBreeding'] <- 1
+dataset['Pelea_capreolus', 'YearRoundBreeding'] <- 2
+dataset['Potamochoerus_porcus', 'YearRoundBreeding'] <- 2
+dataset['Phacochoerus_aethiopicus', 'YearRoundBreeding'] <- 2
+dataset['Tayassu_pecari', 'YearRoundBreeding'] <- 1
+dataset['Tragelaphus_angasii', 'YearRoundBreeding'] <- 1
+dataset['Tragelaphus_spekii', 'YearRoundBreeding'] <- 1
+dataset['Sylvicapra_grimmia', 'YearRoundBreeding'] <- 1
+dataset['Tragulus_javanicus', 'YearRoundBreeding'] <- 1
+dataset['Equus_burchellii', 'YearRoundBreeding'] <- 1
+dataset['Raphicerus_campestris', 'YearRoundBreeding'] <- 1
+dataset['Redunca_redunca', 'YearRoundBreeding'] <- 1
+dataset['Bubalus_bubalis_arnee', 'YearRoundBreeding'] <- NA
+dataset['Hippocamelus_antisensis', 'YearRoundBreeding'] <- 2
+dataset['Neotragus_batesi', 'YearRoundBreeding'] <- 1
+
 ```
 
 ### Split dataset
@@ -113,7 +127,11 @@ Thus, after data preprocessing, "dataset" should be split into two parts that co
 ```{r re-divide the dataset}
 ungulatesTraits <- dataset[, 1:37]
 ecology <- dataset[, 38:78]
+
 # write.table(ungulatesTraits,"ungulatesTraits.csv",row.names=TRUE,col.names=TRUE,sep=",")
+
+# Remove unneeded variables
+rm(dataset)
 ```
 
 # 3 VIF-Analysis
@@ -126,40 +144,47 @@ vif(Predictors)
 ```
 
 # 4 Model Selection
-We choose Generalized Linear Model (GLM) to analyze the relationship between ungulate traits
-and ecology variables. According to the result of VIF analysis, columns from "Predictor" are
-used as independent variables. Take one column from "ungulatesTraits" at a time as the
-dependent variable. For the model selection the phylolm package and phyloglmstep function are required.
-```{r model selection, results='hide'}
+We choose Generalized Linear Model (GLM) to analyze the relationship between ungulate traits and ecology variables. According to the result of VIF analysis, columns from "Predictor" are used as independent variables. Take one column from "ungulatesTraits" at a time as the dependent variable. For the model selection the phylolm package and phyloglmstep/phylostep function are required.
+```{r model selection}
 # Extract the dependent variables to be studied 
-Responser <- ungulatesTraits[c(7:37)]
+Responser <- ungulatesTraits[c(8:37)]
 # Find the factor variables with two levels and change the level '2' to '0', to meet the requirement of 'logistic' method.
-levels(Responser$Domestication)[levels(Responser$Domestication)==2]<-0
-levels(Responser$X12.1_HabitatBreadth)[levels(Responser$X12.1_HabitatBreadth)==2]<-0
 levels(Responser$X6.2_TrophicLevel)[levels(Responser$X6.2_TrophicLevel)==2]<-0
 levels(Responser$Sociality)[levels(Responser$Sociality)==2]<-0
 levels(Responser$SocialHierarchy)[levels(Responser$SocialHierarchy)==2]<-0
 levels(Responser$YearRoundBreeding)[levels(Responser$YearRoundBreeding)==2]<-0
 levels(Responser$DevelopmentStrategy)[levels(Responser$DevelopmentStrategy)==2]<-0
 levels(Responser$HeadOrnaments)[levels(Responser$HeadOrnaments)==2]<-0
-# Divide the 'Responser' into three groups according to the types of variables: 'binaryData', 'multiData' and 'numData'.
-binData <- subset(Responser,select = c("Domestication", "X12.1_HabitatBreadth", "X6.2_TrophicLevel", "Sociality", "SocialHierarchy", "YearRoundBreeding", "DevelopmentStrategy", "HeadOrnaments"))
-multiData <- subset(Responser, select = c("X1.1_ActivityCycle", "MatingSystem", "NaturalPredators", "NumMales", "X6.1_DietBreadth"))
-numData <- subset(Responser, select = -c(Domestication, X12.1_HabitatBreadth, X6.2_TrophicLevel, Sociality, SocialHierarchy, YearRoundBreeding, DevelopmentStrategy, HeadOrnaments, X1.1_ActivityCycle, MatingSystem, NaturalPredators, NumMales, X6.1_DietBreadth))
 
-# ??? insufficient data for glm？？？-- >90%
-# Do the model selection
+# Divide the 'Responser' into three groups according to the types of variables: 'binaryData', 'intData' and 'numData'. X1.1_ActivityCycle and MatingSystem are factors that have more than three levels, so they're excluded in this study due to lack of methods in the phylolm package.
+binData <- subset(Responser,select = c(X6.2_TrophicLevel, Sociality, SocialHierarchy, YearRoundBreeding, DevelopmentStrategy, HeadOrnaments))
+numData <- subset(Responser, select = -c(X24.1_TeatNumber, X12.1_HabitatBreadth, X6.2_TrophicLevel, Sociality, SocialHierarchy, YearRoundBreeding, DevelopmentStrategy, HeadOrnaments, X1.1_ActivityCycle, MatingSystem, NaturalPredators, NumMales, X6.1_DietBreadth))
+intData <- subset(Responser, select = c(X24.1_TeatNumber, X6.1_DietBreadth, X12.1_HabitatBreadth, NumMales, NaturalPredators))
+
+# Do the model selection   
 source("Model_Selection_Num.R")
-source("Model_Selection_Factor_Multi.R")
-source("Model_Selection_Factor_Binary.R")
+source("Model_Selection_Factor.R")
+source("Model_Selection_Int.R")
+
+# According to the summary information stored in the txt documents, we choose traits that possess significant predictor variables (p-value < 0.05), have the R-squared value higher than 0.2 (for numeric traits), have the scale close to 1 (for Poisson regression) as interests to continue to do the research.
+sig_binData <- subset(binData, select = c(Sociality, SocialHierarchy, YearRoundBreeding))
+# sig_intData <- subset(intData, select = c(NaturalPredators, X6.1_DietBreadth))
+# sig_numData <- subset(numData, select = c(X21.1_PopulationDensity_n_km2,	X15.1_LitterSize, AVGFoodConsumption))
+
+# The final models are manually organized into three new documents:"Formula_binary.txt", "Formula_int.txt", "Formula_num.txt"
+
 # Remove unneeded variables
-# rm(Responser)
+rm(dataset, ecology, Responser)
 ```
 
-## Loading...↓↓↓
+# 5 Residual Plots 
+The phylogenetic generalized linear modelling analysis optimizes the model. The function phyloglm/phylolm from the phylolm package is used for this.
+```{r model analysis}
+# Import documents that contain the formulas for the model analysis
+binFormulas <- read.table("Formula_binary.txt", sep = "\n")
 
-# 5 Modelling analysis 
-
-
-# 6 Model evaluation 
+source("Model_Analysis_Factor.R")
+source("Model_Analysis_Int.R")
+source("Model_Analysis_Num.R")
+```
 
