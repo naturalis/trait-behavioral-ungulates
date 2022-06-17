@@ -28,6 +28,8 @@ print(summary(phyloGLM))
 ## Partial R2
 # Compare full model and reduced models
 
+R2.lik(phyloGLM) # 0.3030795
+
 # Reduced model: without ecological variables
 r_formula <- Sociality ~ 1
 r_phyloGLM <- phyloglm(r_formula, data = glmData, phy = modelTree,
