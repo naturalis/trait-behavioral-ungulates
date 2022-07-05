@@ -1,17 +1,17 @@
 ---
 title: "How does ecology predict ungulate traits"
 author: "yuxin wei"
-date: "2021/4/12"
+date: "2022/06/03"
 output: 
-  html_document: default
-  pdf_document: default
+html_document: default
+pdf_document: default
 ---
-```{r setup, include=FALSE}
+  ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 
 # 1 Import data
-Our first step is to import packages and data into R. The trait data and OMI data also need to be merged.
+Import packages and data into R. The trait data and OMI data also need to be merged.
 
 ### Load packages
 ```{r Load packages, message=FALSE}
@@ -25,6 +25,13 @@ library(performance)
 library(see)
 library(gridExtra)
 library(arm)
+library(sp)
+library(raster)
+library(rgdal)
+library(ggplot2)
+library(sf)
+library(rr2)
+library(phytools)
 ```
 
 ### Import data
@@ -35,6 +42,7 @@ ungulatesData <- read.csv("https://raw.githubusercontent.com/naturalis/trait-org
 omi <- read.csv("https://raw.githubusercontent.com/naturalis/trait-geo-diverse-ungulates/master/results/OMI/niche_traits.csv")
 tree <- read.tree("https://raw.githubusercontent.com/naturalis/trait-organismal-ungulates/master/data/phylogeny/ungulates.tree")
 ```
+
 
 ### Merge datasets
 The ungulate data and OMI data have to be merged into one dataset. The EoL-ID is removed and the data is merged by the canonical name (present in both the datasets). The last step is to replace the spaces in the canonical name with underscores, to match the species names in the tree.
@@ -57,7 +65,7 @@ dataset. The species that aren't in the dataset are dropped from the tree.
 tree$tip.label[tree$tip.label=="Equus_asinus"] <- "Equus_africanus"
 # Check Which species aren't in the tree
 dropRows <- setdiff(dataset$CanonicalName, tree$tip.label)
-# Drop rows that aren't in the tree (check manually if these are domesticated)
+# Drop rows that aren't in the tree
 row.names(dataset) <- dataset$CanonicalName
 dataset <- dataset[!(row.names(dataset) %in% dropRows), ]
 # Drop tips that aren't in dataset
@@ -70,16 +78,14 @@ rm(dropRows, dropTips)
 ```
 
 ### Miscellaneous preprocessing
-The dots in the column names are replaced with underscores. After that, the traits that consist of more than 100 missing values, traits that have no information gain and traits that are almost identical to other traits are removed.
+The traits that consist of more than 100 missing values, traits that have no information gain and traits that are almost identical to other traits are removed.
 ```{r misc preprocessing}
-# Rename column with dots in the name
-names(dataset)[names(dataset)=="X21.1_PopulationDensity_n.km2"] <- "X21.1_PopulationDensity_n_km2"
 # Remove traits that (almost) only consist of missing values (>100 NA)
 dataset <- subset(dataset, select = -c(X5.4_WeaningBodyMass_g, X13.3_WeaningHeadBodyLen_mm, X13.2_NeonateHeadBodyLen_mm, X18.1_BasalMetRate_mLO2hr, X5.2_BasalMetRateMass_g, X2.1_AgeatEyeOpening_d, X8.1_AdultForearmLen_mm, X10.1_PopulationGrpSize))
 # Remove traits without any information gain (only consist of one value)
 dataset <- subset(dataset, select = -c(Motility, ParentalCare, X12.2_Terrestriality))
 # Remove traits that are almost identical to other traits
-dataset <- subset(dataset, select = -c(PullStrength, NumOffspring, BreedingInterval, Diet, AVGWeight, MaturityReachFemale, MaturityReachMale, X22.2_HomeRange_Indiv_km2, X5.3_NeonateBodyMass_g, X16.1_LittersPerYear,X7.1_DispersalAge_d))
+dataset <- subset(dataset, select = -c(PullStrength, NumOffspring, BreedingInterval, Diet, MaturityReachFemale, MaturityReachMale, X22.2_HomeRange_Indiv_km2, X5.3_NeonateBodyMass_g, X16.1_LittersPerYear,X7.1_DispersalAge_d))
 ```
 
 ### Set as factors and correct for 'YearRoundBreeding'
@@ -125,8 +131,8 @@ dataset['Neotragus_batesi', 'YearRoundBreeding'] <- 1
 The aim of this research is to find out how does ecology predict ungulate traits. 
 Thus, after data preprocessing, "dataset" should be split into two parts that contains the predictor variables and the dependent variables respectively. 
 ```{r re-divide the dataset}
-ungulatesTraits <- dataset[, 1:37]
-ecology <- dataset[, 38:78]
+ungulatesTraits <- dataset[, 1:38]
+ecology <- dataset[, 39:79]
 
 # write.table(ungulatesTraits,"ungulatesTraits.csv",row.names=TRUE,col.names=TRUE,sep=",")
 
@@ -147,7 +153,7 @@ vif(Predictors)
 We choose Generalized Linear Model (GLM) to analyze the relationship between ungulate traits and ecology variables. According to the result of VIF analysis, columns from "Predictor" are used as independent variables. Take one column from "ungulatesTraits" at a time as the dependent variable. For the model selection the phylolm package and phyloglmstep/phylostep function are required.
 ```{r model selection}
 # Extract the dependent variables to be studied 
-Responser <- ungulatesTraits[c(8:37)]
+Responser <- ungulatesTraits[c(8:38)]
 # Find the factor variables with two levels and change the level '2' to '0', to meet the requirement of 'logistic' method.
 levels(Responser$X6.2_TrophicLevel)[levels(Responser$X6.2_TrophicLevel)==2]<-0
 levels(Responser$Sociality)[levels(Responser$Sociality)==2]<-0
